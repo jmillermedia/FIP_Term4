@@ -1,0 +1,30 @@
+{
+  "name": "fip_term4",
+  "version": "1.0.0",
+  "description": "London Referees Group Webpage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startdev": "nodemon app",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmillermedia/FIP_Term4.git"
+  },
+  "author": "Jonathan Miller, Zen Carriere",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "mysql": "^2.18.1",
+    "underscore": "^1.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "bugs": {
+    "url": "https://github.com/jmillermedia/FIP_Term4/issues"
+  },
+  "homepage": "https://github.com/jmillermedia/FIP_Term4#readme"
+}
