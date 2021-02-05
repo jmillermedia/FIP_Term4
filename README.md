@@ -7,9 +7,13 @@
 
 ## Our Team:
 Shannon Lounges - Project Manager
+
 Jagdeep Singh - Graphic Designer
+
 Chieh Yang - Video/3D/Motion Designer
+
 Zen Carriere - Back End Development
+
 Jonathan Miller - Front End Development
 
 ## Objective:
