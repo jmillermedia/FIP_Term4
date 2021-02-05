@@ -18,6 +18,7 @@ Jonathan Miller - Front End Development
 
 ## Objective:
 Revamp of London Referees Group in London Ontario.
+
 [London Referees Group](https://londonrefereesgroup.com/ 'London Referees Group')
 
 ## Resources:
@@ -29,14 +30,21 @@ Revamp of London Referees Group in London Ontario.
 
 [Pixabay Stock Photos](https://pixabay.com/ 'Pixabay')
 
-## Languages Used:
+## Languages/Libraries Used:
 HTML5
+
 CSS
+
 SASS
+
 JavaScript
+
 MySQL
+
 PHP
+
 Vue.js
+
 Node.js
 
 ## Installation:
