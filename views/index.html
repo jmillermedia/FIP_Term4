@@ -5,26 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>London Referees Group</title>
-    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/reset.css">
+
 </head>
 <body>
     <main id="app">
         <h1 class="hidden">Main Site</h1>
+            <div class="burgerButton">
+                <div class="burgerBar1"></div>
+                <div class="burgerBar2"></div>
+                <div class="burgerBar3"></div>
+            </div>
+
+        <!-- Main Navigation Section (mobile and desktop) -->
         <header class="nav">
             <h2 class="hidden">Main Nav</h2>
-
-            <nav class="nav__main">
-
+            <nav class="nav__main hidden">
+                <ul class="nav__main--ul">
+                    <li class="nav__main--li">Home</li>
+                    <li class="nav__main--li">About Us</li>
+                    <li class="nav__main--li">Members</li>
+                    <li class="nav__main--li">Train</li>
+                    <li class="nav__main--li">Contact Us</li>
+                </ul>
             </nav>
-            <nav class="nav__mobile">
+            <nav class="nav__mobile hidden"> <!-- toggle hidden class with JS-->
                 <h2 class="hidden">Mobile Nav</h2>
                 <ul class="nav__mobile--ul">
-                    <div class="burgerButton">
-                        <div class="burgerBar1"></div>
-                        <div class="burgerBar2"></div>
-                        <div class="burgerBar3"></div>
-                    </div>
                     <li class="nav__mobile--li">Home</li>
                     <li class="nav__mobile--li">About Us</li>
                     <li class="nav__mobile--li">Members</li>
@@ -33,6 +41,54 @@
                 </ul>
             </nav>
         </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2 class="hidden">Hero Photo Section</h2>
+            <img class="hero__logo" src="#" alt="LRG Logo">
+            <p class="hero__slogan">The Game Is In Your Hands</p>
+            <button class="hero__learn">Learn More</button>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="intro">
+            <h2 class="hidden">Introduction to London Referees Group</h2>
+                <img src="#" alt="Who are we picture" class="intro__firstImage">
+                    <h3 class="intro__who">Who are we?</h3>
+                        <p class="intro__copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos dolore illum, iusto magni tenetur quam blanditiis ipsa non corrupti quo dicta pariatur nihil beatae ad ullam omnis repellendus. Suscipit, quisquam.</p>
+            <img src="#" alt="Hockey Puck Icon" class="intro__pageBreak">
+                <img src="#" alt="Second Intro picture" class="intro__secondImage">
+                    <h3 class="into__what">What we do:</h3>
+                        <p class="intro__copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dolorem beatae accusamus obcaecati sint, nulla nisi similique quo esse consequuntur sapiente mollitia laboriosam a provident fugit cumque commodi ab eos.</p>
+        </section>
+
+        <!-- Why You should be a ref section -->
+        <section class="joinUs">
+            <h2 class="joinUs__header">Why you should be a referee:</h2>
+                <p class="joinUs__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci veniam aliquid sapiente iure, dolorem eaque cupiditate recusandae esse. Quisquam facere eius tempora voluptate ducimus, magni qui voluptas ad vitae iure?</p>
+            <div class="joinUs__icons">
+                <div class="joinUs__icons--first">
+                    <img src="#" alt="First Icon">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="joinUs__icons--second">
+                    <img src="#" alt="First Icon">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial section -->
+        <section class="testimonials">
+            <h2 class="testimonials__heading">What Clients Say:</h2>
+            <!-- We should probably have some backend work here for -->
+            <!-- selecting the different testimonials -->
+        </section>
+
+        <footer class="footer">
+            h2
+        </footer>
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script defer type="module" src="scripts/main.js"></script>
