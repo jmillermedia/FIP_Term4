@@ -4,11 +4,11 @@ class Database
     // Note: specify your own database credentials
     private $host = "localhost";
 
-    private $db_name = "lrg_db";
+    private $db_name = "db_lrg";
 
     private $username = "root";
 
-    private $password = "";
+    private $password = "root";
 
     #1.new private static variable
     private static $instance = null;
