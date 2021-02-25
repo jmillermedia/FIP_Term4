@@ -3,7 +3,7 @@
     font-size: 3em;
     color: $offwhite;
     &__mobile {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -14,7 +14,7 @@
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         border: solid $dark-grey 0.5em;
-        background-color: $light-gray;
+        background-color: $light-grey;
 
         &--ul {
             width: 100%;
@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 280px) {
     .burgerButton {
-        position: absolute;
+        position: fixed;
         display: inline-block;
         cursor: pointer;
         z-index: 101;
@@ -46,7 +46,7 @@
         .burgerBar1, .burgerBar2, .burgerBar3 {
             width: 35px;
             height: 5px;
-            background-color: $main-orange;
+            background-color: $offwhite;
             margin: 6px 0;
             transition: all 0.4s;
         }
