@@ -15,10 +15,12 @@
         },
     }).$mount('#app');
 
-    let burgerButton = document.querySelector('.burgerButton')
+    let burgerButton = document.querySelector('.burgerButton'),
+        mobileNav = document.querySelector('.nav__mobile');
 
     function burgerMenuExpand(){
         document.querySelector('.burgerButton').classList.toggle('closeBurger');
+        mobileNav.classList.toggle('hidden');
     }
 
     burgerButton.addEventListener('click', burgerMenuExpand);
