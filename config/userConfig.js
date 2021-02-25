@@ -1,4 +1,4 @@
-// this is our SQL connect information
+
 const sqlCreds = {
     user: "root",
     password: "",
