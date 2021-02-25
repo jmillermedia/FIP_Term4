@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "startdev": "nodemon app",
+    "browsync": "browser-sync start --proxy 'localhost:5050' --files 'index.html' 'chat.html' 'public'",
     "start": "node app"
   },
   "repository": {
@@ -15,6 +16,7 @@
   "author": "Jonathan Miller, Zen Carriere",
   "license": "MIT",
   "dependencies": {
+    "browser-sync": "^2.26.14",
     "express": "^4.17.1",
     "gulp": "^4.0.2",
     "mysql": "^2.18.1",

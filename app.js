@@ -21,7 +21,15 @@ server.get("/about", (req, res) => {
     res.sendFile(path.join(__dirname, 'views/about.html'));
 })
 
-const port = process.env.PORT || 3000; // localhost:3000
+server.get("/members", (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/members.html'));
+})
+
+server.get("/train", (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/train.html'));
+})
+
+const port = process.env.PORT || 5050; // localhost:3000
 
 server.listen(port, () => {
     console.log(`Server running at ${port}/`);

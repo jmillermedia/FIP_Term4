@@ -1,0 +1,66 @@
+.nav {
+    font-family: 'alegreya_sans-regular';
+    font-size: 3em;
+    color: $offwhite;
+    &__mobile {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: solid $dark-grey 0.5em;
+        background-color: $light-grey;
+
+        &--ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        &--li {
+            text-align: center;
+            margin-top: 1em;
+        }
+    }
+}
+
+@media screen and (min-width: 280px) {
+    .burgerButton {
+        position: fixed;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 101;
+        right: 0;
+        top: 0;
+        width: 35px;
+        height: 35px;
+        padding: 2em;
+
+        .burgerBar1, .burgerBar2, .burgerBar3 {
+            width: 35px;
+            height: 5px;
+            background-color: $offwhite;
+            margin: 6px 0;
+            transition: all 0.4s;
+        }
+    }
+}
+
+.closeBurger {
+    .burgerBar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .burgerBar2 {opacity: 0;}
+    .burgerBar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
