@@ -1,0 +1,17 @@
+{
+  "name": "fip_term4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start-server": "nodemon server",
+    "start":"node server"
+  },
+  "keywords": [],
+  "author": "jon and zen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
