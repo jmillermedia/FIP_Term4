@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63.584" height="61.343" viewBox="0 0 63.584 61.343">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_18" data-name="Rectangle 18" width="51" height="38" transform="translate(293 442)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="puck" transform="matrix(0.788, -0.616, 0.616, 0.788, -503.01, -136.513)" clip-path="url(#clip-path)">
+    <g id="ice-hockey-puck-svgrepo-com" transform="translate(294.111 442)">
+      <g id="Group_8" data-name="Group 8" transform="translate(0 0)">
+        <g id="Group_7" data-name="Group 7">
+          <path id="Path_144" data-name="Path 144" d="M24.431,37.092C10.94,37.092,0,32.7,0,27.276V43.2H.076C.076,49,10.983,53.714,24.431,53.714S48.79,49,48.79,43.2h.071V27.276C48.862,32.7,37.924,37.092,24.431,37.092Z" transform="translate(-0.001 -15.714)" fill="#b81217"/>
+          <ellipse id="Ellipse_12" data-name="Ellipse 12" cx="24.43" cy="9.816" rx="24.43" ry="9.816" fill="#b81217"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
