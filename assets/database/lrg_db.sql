@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 20, 2021 at 11:52 PM
+-- Generation Time: Feb 25, 2021 at 07:45 PM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -211,7 +211,14 @@ CREATE TABLE IF NOT EXISTS `tbl_users` (
   `user_username` varchar(50) NOT NULL,
   `user_password` varchar(50) NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_users`
+--
+
+INSERT INTO `tbl_users` (`user_id`, `user_fname`, `user_lname`, `user_phone`, `user_email`, `user_username`, `user_password`) VALUES
+(1, 'Banglanfeng', 'Pan', '111-111-1111', 'b_pan2@fanshaweonline.ca', 'PanUser', 'PanPassword');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
