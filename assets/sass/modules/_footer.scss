@@ -74,6 +74,11 @@
             justify-content: space-around;
             padding: 1em;
         }
+
+        & a {
+            color: $offwhite;
+            text-decoration: none;
+        }
     }
 
     &__copyright {

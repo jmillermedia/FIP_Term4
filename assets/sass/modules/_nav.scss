@@ -2,6 +2,7 @@
     font-family: 'alegreya_sans-regular';
     font-size: 3em;
     color: $offwhite;
+
     &__mobile {
         position: fixed;
         display: flex;
@@ -27,6 +28,15 @@
         &--li {
             text-align: center;
             margin-top: 1em;
+        }
+
+        & a {
+            color: $offwhite;
+            text-decoration: none;
+
+            &.selected {
+                color: $main-red;
+            }
         }
     }
 }
