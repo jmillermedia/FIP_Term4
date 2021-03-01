@@ -1,0 +1,85 @@
+hr {
+    width: 25%;
+    margin-bottom: 1.5em;
+    border: 3px solid $main-red;
+}
+
+.aboutUs {
+    height: auto;
+    padding-bottom: 1.5em;
+
+    &__heading {
+        text-align: center;
+        font-family: $fontStack;
+        color: $main-red;
+        font-size: 1.5em;
+        padding: 1em 0 0.5em 0;
+    }
+
+    &__underline {
+        width: 35%;
+        margin-bottom: 1.5em;
+    }
+
+    &__copy {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        font-family: $fontStack;
+        color: $offwhite;
+        padding-bottom: 1.5em;
+        line-height: 1.5em;
+    }
+
+    &__fact {
+        background-color: $footerRed;
+        font-family: $fontStack;
+        width: 65%;
+        display: block;
+        margin: 0 auto;
+        padding: 1.5em;
+        margin-bottom: 1.5em;
+        border-radius: 8px;
+        -webkit-box-shadow: 4px 3px 13px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 4px 3px 13px 0px rgba(0,0,0,0.5);
+        box-shadow: 4px 3px 13px 0px rgba(0,0,0,0.5);
+
+        &--heading {
+            font-size: 1.5em;
+            padding-bottom: 0.5em;
+        }
+    }
+}
+
+.meetUs {
+    background-color: $dark-grey;
+    text-align: center;
+    font-family: $fontStack;
+
+    &__pageBreak {
+        margin-top: -25px;
+    }
+
+    &__member {
+        padding-bottom: 2em;
+    }
+
+    &__heading {
+        font-size: 1.5em;
+        padding: 1em 0 1em 0;
+    }
+
+    &__profilePic {
+        width: 120px;
+        border-radius: 60px;
+    }
+
+    &__name {
+        font-size: 1.5em;
+        padding: 1em 0 0.25em 0;
+    }
+
+    &__role {
+        color: $main-red;
+    }
+}
