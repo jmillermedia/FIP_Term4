@@ -5,25 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>London Referees Group</title>
-    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/reset.css">
+
 </head>
 <body>
     <main id="app">
-        <header class="nav">
-            <nav class="nav__main">
+        <h1 class="hidden">About Us Page</h1>
+            <div class="burgerButton">
+                <div class="burgerBar1"></div>
+                <div class="burgerBar2"></div>
+                <div class="burgerBar3"></div>
+            </div>
 
+        <!-- Main Navigation Section (mobile and desktop) -->
+        <header class="nav">
+            <h2 class="hidden">Main Nav</h2>
+            <nav class="nav__main hidden">
+                <ul class="nav__main--ul">
+                    <li class="nav__main--li selected">Home</li>
+                    <li class="nav__main--li">About Us</li>
+                    <li class="nav__main--li">Members</li>
+                    <li class="nav__main--li">Train</li>
+                    <li class="nav__main--li">Contact Us</li>
+                </ul>
             </nav>
-            <nav class="nav__mobile">
-                <ul class="nav__mobile--ui">
-                    <li class="nav__mobile--li">Home</li>
-                    <li class="nav__mobile--li">About Us</li>
-                    <li class="nav__mobile--li">Members</li>
-                    <li class="nav__mobile--li">Train</li>
-                    <li class="nav__mobile--li">Contact Us</li>
+            <nav class="nav__mobile hidden"> <!-- toggle hidden class with JS-->
+                <h2 class="hidden">Mobile Nav</h2>
+                <ul class="nav__mobile--ul">
+                    <li class="nav__mobile--li"><a href="/">Home</a></li>
+                    <li class="nav__mobile--li"><a href="#" class="selected">About Us</a></li>
+                    <li class="nav__mobile--li"><a href="/members">Members</a></li>
+                    <li class="nav__mobile--li"><a href="/train">Train</a></li>
+                    <li class="nav__mobile--li"><a href="/contact">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
+
+        <!-- Header Section -->
+        <section class="header" style="background-image: url(../images/heroAbout.jpg);">
+            <h2 class="hidden">Hero Photo Section</h2>
+            <img class="header__logo" src="images/logo.svg" alt="LRG Logo">
+            <p class="header__slogan">About Us</p>
+        </section>
+
+        <!-- Main About Section -->
+        <section class="aboutUs">
+            <h2 class="aboutUs__heading">London Referees Group</h2>
+            <hr class="aboutUs__underline">
+            <p class="aboutUs__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem repellendus veritatis quibusdam amet explicabo minima, perferendis, natus, harum sapiente fuga minus laboriosam! Eos, voluptas eligendi repudiandae deleniti sit ullam minima.</p>
+            <p class="aboutUs__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem repellendus veritatis quibusdam amet explicabo minima, perferendis, natus, harum sapiente fuga minus laboriosam! Eos, voluptas eligendi repudiandae deleniti sit ullam minima.</p>
+            <div class="aboutUs__fact">
+                <h3 class="aboutUs__fact--heading">Vision:</h3>
+                <p class="aboutUs__fact--copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor libero, praesentium nulla quia itaque voluptate dolores, doloremque a quis sequi, mollitia porro! Quas corporis at necessitatibus, adipisci similique dolorum.</p>
+            </div>
+            <div class="aboutUs__fact">
+                <h3 class="aboutUs__fact--heading">Mission:</h3>
+                <p class="aboutUs__fact--copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor libero, praesentium nulla quia itaque voluptate dolores, doloremque a quis sequi, mollitia porro! Quas corporis at necessitatibus, adipisci similique dolorum.</p>
+            </div>
+            <div class="aboutUs__fact">
+                <h3 class="aboutUs__fact--heading">Values:</h3>
+                <p class="aboutUs__fact--copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor libero, praesentium nulla quia itaque voluptate dolores, doloremque a quis sequi, mollitia porro! Quas corporis at necessitatibus, adipisci similique dolorum.</p>
+            </div>
+        </section>
+
+        <!-- Meet Our Executive Members Section -->
+        <section class="meetUs">
+            <img src="images/puckBreak.svg" alt="Puck Page Break" class="meetUs__pageBreak">
+            <h2 class="meetUs__heading">Meet Our Executive Members</h2>
+            <hr class="meetUs__underline">
+            <div class="meetUs__member">
+                <img src="images/memberPic1.jpg" alt="President" class="meetUs__profilePic">
+                <p class="meetUs__name">Carl Vink</p>
+                <p class="meetUs__role">President</p>
+            </div>
+            <div class="meetUs__member">
+                <img src="images/memberPic2.jpg" alt="Vice-President Picture" class="meetUs__profilePic">
+                <p class="meetUs__name">Joe Masse</p>
+                <p class="meetUs__role">Vice-President</p>
+            </div>
+            <div class="meetUs__member">
+                <img src="images/memberPic3.jpg" alt="Secretary Picture" class="meetUs__profilePic">
+                <p class="meetUs__name">Jane Bray</p>
+                <p class="meetUs__role">Secretary</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__partners">
+                <h2>Partners:</h2>
+                    <div class="footer__partners--logos">
+                        <a href="#" class="partnerLink"><img src="images/partnerHockeyCanada.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerOHF.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerAllianceHockey.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerOMHA.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerWHA.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerOHA.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerSportAbility.svg" alt="Partner Icon"></a>
+                    </div>
+            </div>
+
+            <img src="images/logo.svg" alt="LRG Logo" class="footer__logo">
+
+            <nav class="footer__socialNav">
+                <h2 class="hidden">Social Media Navigation</h2>
+                <ul>
+                    <li><a href="#"><img src="images/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
+                    <li><a href="#"><img src="images/insta.svg" alt="instagram"></a></li>
+                    <li><a href="#"><img src="images/youtube.svg" alt="youtube"></a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__contact">
+                <a href="tel:222-111-2222"><img src="images/phoneIcon.svg" alt="Phone Icon"> 222-111-2222</a>
+                <a href="mailto:lrg@londonrefereesgroup.com"><img src="images/emailIcon.svg" alt="email Icon"> lrg@londonrefereesgroup.com</a>
+            </div>
+
+            <nav class="footer__mainNav">
+                <h2 class="hidden">Footer Nav</h2>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="/members">Members</a></li>
+                    <li><a href="/train">Train</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <p class="footer__copyright">© 2020 all rights reserved</p>
+        </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script defer type="module" src="scripts/main.js"></script>

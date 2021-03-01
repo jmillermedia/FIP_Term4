@@ -9,7 +9,7 @@
 
     &__logo {
         display: block;
-        margin: 1em auto;
+        margin: 1.5em auto;
     }
 
     &__partners {
@@ -17,6 +17,8 @@
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        background-color: $dark-grey;
+        padding-bottom: 1.5em;
 
         & h2 {
             display: block;
