@@ -1,0 +1,86 @@
+.footer {
+    height: auto;
+
+    & h2 {
+        font-size: 1.5em;
+        font-family: $fontStack;
+        text-align: center;
+    }
+
+    &__logo {
+        display: block;
+        margin: 1em auto;
+    }
+
+    &__partners {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        & h2 {
+            display: block;
+        }
+
+        &--logos {
+        display: flex;
+        width: 60%;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        padding-top: 1em;
+        margin: 0 auto;
+
+        & img {
+            padding: 0.25em;
+        }
+        }
+
+    }
+
+    &__socialNav {
+        width: 50%;
+        display: block;
+        margin: 1em auto;
+
+        & ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-top: 1em;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: $fontStack;
+        padding-bottom: 1em;
+
+        & a {
+            color: $offwhite;
+            text-decoration: none;
+        }
+    }
+
+    &__mainNav {
+        background-color: $footerRed;
+
+        & ul {
+            font-family: $fontStack;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 1em;
+        }
+    }
+
+    &__copyright {
+        background-color: $footerRed;
+        font-family: $fontStack;
+        text-align: center;
+        font-size: 0.75em;
+    }
+
+}

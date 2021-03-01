@@ -1,9 +1,12 @@
 @import 'modules/_vars.scss';
 @import 'modules/_nav.scss';
 @import 'modules/_fonts.scss';
+@import 'modules/header.scss';
+@import 'modules/footer.scss';
 @import 'modules/index.scss';
 
 body {
     color: $offwhite;
     background-color: $light-grey;
+    overflow-x: hidden;
 }

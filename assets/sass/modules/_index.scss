@@ -1,63 +1,6 @@
-.hero {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../images/ice@2x.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: color;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "hero__logo"
-        "hero__slogan"
-        "hero__learn";
-    
-    &__logo {
-        display: block;
-        margin: 2.25em auto;
-        top: 0;
-    }
-
-    &__slogan {
-        width: 70%;
-        margin: 0 auto;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        color: $offwhite;
-        font-family: 'alegreya_sans-light';
-        text-transform: uppercase;
-        font-size: 2.5em;
-    }
-
-    &__learn {
-        width: 35%;
-        height: 50px;
-        font-family: 'source_sans-regular', Arial, Helvetica, sans-serif;
-        font-size: 1.25em;
-        color: $offwhite;
-        background: none;
-        border: $offwhite solid 2px;
-        border-radius: 16px;
-        margin: 0 auto;
-        transition: all 1s;
-
-        &:hover {
-            color: $light-grey;
-            background-color: $offwhite;
-        }
-    }
-}
-
 .intro {
     text-align: center;
-    font-family: 'source_sans-regular';
+    font-family: $fontStack;
     width: 100vw;
     height: 100%;
 
@@ -69,15 +12,6 @@
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
         border-left: 20px solid $main-red;
-
-        & img {
-            width: 100%;
-            filter: blur(15%);
-        }
-
-        & p {
-            position: absolute;
-        }
     }
 
     &__pageBreak {
@@ -86,9 +20,14 @@
     }
 
     &__question {
-        font-family: 'source_sans-regular';
+        font-family: $fontStack;
         color: $main-red;
         font-size: 2em;
+    }
+
+    &__answer {
+        font-size: 1.5em;
+        padding-bottom: 0.75em;
     }
 
     &__underline {
@@ -101,5 +40,130 @@
         margin: 0 auto;
         text-align: left;
         width: 75%;
+        text-align: justify;
+        line-height: 1.25em;
     }
 }
+
+.joinUs {
+    height: 100%;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 2em;
+
+    &__header {
+        font-size: 1.5em;
+        font-family: $fontStack;
+        text-align: center;
+    }
+
+    &__copy {
+        font-family: $fontStack;
+        width: 75vw;
+        display: block;
+        margin: 1em auto;
+        text-align: justify;
+        line-height: 1.25em;
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 1em;
+
+        & img {
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 1em;
+        }
+
+        & p {
+            font-family: $fontStack;
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 1em;
+        }
+    }
+}
+
+.testimonials {
+    position: relative;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    padding-bottom: 2em;
+
+
+    &__heading {
+        font-size: 1.5em;
+        font-family: $fontStack;
+        padding-bottom: 1em;
+        text-align: center;
+
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        font-size: 1.5em;
+        font-family: $fontStack;
+        margin-top: 33.5px;
+        background-color: $dark-grey;
+
+        &__profilePic {
+            width: 67px;
+            border-radius: 35.525px;
+            display: block;
+            margin: 0 auto;
+            margin-top: -33.5px;
+        }
+
+        &__name {
+            text-align: center;
+            padding-bottom: 0.25em;
+        }
+
+        &__role {
+            text-align: center;
+            color: $main-red;
+            font-size: 0.75em;
+        }
+
+        &__copy {
+            font-size: 0.6em;
+            padding: 1em 2em 4em 2em;
+            line-height: 1.25em;
+            text-align: justify;
+        }
+    }
+
+    & button {
+        width: 40px;
+        height: 40px;
+        background-color: $main-red;
+        border: none;
+        border-radius: 20px;
+        margin-top: 20em;
+    }
+
+    &__left {
+        position: absolute;
+        left: -20px;
+    }
+
+    &__right {
+        position: absolute;
+        right: -20px;
+    }
+}
+
