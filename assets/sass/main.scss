@@ -1,10 +1,11 @@
 @import 'modules/_vars.scss';
 @import 'modules/_nav.scss';
 @import 'modules/_fonts.scss';
-@import 'modules/header.scss';
-@import 'modules/footer.scss';
-@import 'modules/index.scss';
-@import 'modules/about.scss';
+@import 'modules/_header.scss';
+@import 'modules/_footer.scss';
+@import 'modules/_index.scss';
+@import 'modules/_about.scss';
+@import 'modules/_members.scss';
 
 body {
     color: $offwhite;

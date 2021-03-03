@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Referees Group</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/reset.css">
+
+</head>
+<body>
+    <main id="app">
+        <h1 class="hidden">Main Site</h1>
+            <div class="burgerButton">
+                <div class="burgerBar1"></div>
+                <div class="burgerBar2"></div>
+                <div class="burgerBar3"></div>
+            </div>
+
+        <!-- Main Navigation Section (mobile and desktop) -->
+        <header class="nav">
+            <h2 class="hidden">Main Nav</h2>
+            <nav class="nav__main hidden">
+                <ul class="nav__main--ul">
+                    <li class="nav__main--li selected">Home</li>
+                    <li class="nav__main--li">About Us</li>
+                    <li class="nav__main--li">Members</li>
+                    <li class="nav__main--li">Train</li>
+                    <li class="nav__main--li">Contact Us</li>
+                </ul>
+            </nav>
+            <nav class="nav__mobile hidden"> <!-- toggle hidden class with JS-->
+                <h2 class="hidden">Mobile Nav</h2>
+                <ul class="nav__mobile--ul">
+                    <li class="nav__mobile--li selected"><a href="/">Home</a></li>
+                    <li class="nav__mobile--li"><a href="/about">About Us</a></li>
+                    <li class="nav__mobile--li"><a href="#" class="selected">Members</a></li>
+                    <li class="nav__mobile--li"><a href="/train">Train</a></li>
+                    <li class="nav__mobile--li"><a href="/contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Header Section -->
+        <section class="header" style="background-image: url(../images/heroMembers.jpg);">
+            <h2 class="hidden">Hero Photo Section</h2>
+            <img class="header__logo" src="images/logo.svg" alt="LRG Logo">
+            <p class="header__slogan">Members</p>
+            <button class="header__learn">Login</button>
+        </section>
+
+        <!-- Become A Member Section -->
+        <section class="becomeMember">
+            <div class="becomeMember__heading">
+                <img src="images/becomeMember.jpg" alt="Referee officiating." class="becomeMember__heading--image">
+                <h2 class="becomeMember__heading--title">Become A Member</h2>
+            </div>
+                <h3 class="becomeMember__question">What is membership for?</h3>
+                <p class="becomeMember__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore magnam, veniam incidunt ducimus sint. Nesciunt minus eaque repellat aliquam cumque voluptate porro neque consectetur vero, eos adipisci sequi illum?</p>
+                <button class="becomeMember__join">Join Now!</button>
+
+                <div class="becomeMember__schedule">
+                <h3 class="becomeMember__question">View Game Scheduling</h3>
+                <button class="becomeMember__join">Click Here!</button>
+            </div>
+        </section>
+
+        <!-- Engagement Section -->
+        <section class="engagement">
+            <h2 class="hidden">Engagement Section</h2>
+            <img src="images/puckBreak.svg" alt="Puck Page Break" class="engagement__break">
+            <div class="engagement__piece">
+                <img src="images/engagement1.jpg" alt="Hockey Players with Referee" class="engagement__piece--image">
+                <h2 class="engagement__piece--heading">Skill Building</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam unde amet, delectus cum repudiandae labore. </p>
+            </div>
+            <div class="engagement__piece">
+                <img src="images/engagement2.jpg" alt="Hockey Players with Referee" class="engagement__piece--image">
+                <h2 class="engagement__piece--heading">Skill Building</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam unde amet, delectus cum repudiandae labore. </p>
+            </div>
+            <div class="engagement__piece">
+                <img src="images/engagement3.jpg" alt="Hockey Players with Referee" class="engagement__piece--image">
+                <h2 class="engagement__piece--heading">Skill Building</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam unde amet, delectus cum repudiandae labore. </p>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="resources">
+            <img src="images/puckBreak.svg" alt="Puck Icon">
+            <h2 class="resources__heading">Additional Resources</h2>
+            <p class="resources__copy">Our partner Certification Recertification Clinics and contacts.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+            </p>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__partners">
+                <h2>Partners:</h2>
+                    <div class="footer__partners--logos">
+                        <a href="#" class="partnerLink"><img src="images/partnerHockeyCanada.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerOHF.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerAllianceHockey.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerOMHA.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerWHA.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerOHA.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerSportAbility.svg" alt="Partner Icon"></a>
+                    </div>
+            </div>
+
+            <img src="images/logo.svg" alt="LRG Logo" class="footer__logo">
+
+            <nav class="footer__socialNav">
+                <h2 class="hidden">Social Media Navigation</h2>
+                <ul>
+                    <li><a href="#"><img src="images/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
+                    <li><a href="#"><img src="images/insta.svg" alt="instagram"></a></li>
+                    <li><a href="#"><img src="images/youtube.svg" alt="youtube"></a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__contact">
+                <a href="tel:222-111-2222"><img src="images/phoneIcon.svg" alt="Phone Icon"> 222-111-2222</a>
+                <a href="mailto:lrg@londonrefereesgroup.com"><img src="images/emailIcon.svg" alt="email Icon"> lrg@londonrefereesgroup.com</a>
+            </div>
+
+            <nav class="footer__mainNav">
+                <h2 class="hidden">Footer Nav</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/members">Members</a></li>
+                    <li><a href="/train">Train</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <p class="footer__copyright">© 2020 all rights reserved</p>
+        </footer>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer type="module" src="scripts/main.js"></script>
+</body>
+</html>
