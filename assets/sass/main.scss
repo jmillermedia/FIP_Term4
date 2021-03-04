@@ -6,9 +6,18 @@
 @import 'modules/_index.scss';
 @import 'modules/_about.scss';
 @import 'modules/_members.scss';
+@import 'modules/_train.scss';
 
 body {
     color: $offwhite;
     background-color: $light-grey;
     overflow-x: hidden;
+}
+
+.puckBreak {
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    margin-top: -25px;
+    margin-bottom: 25px;
 }
