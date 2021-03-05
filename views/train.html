@@ -100,14 +100,24 @@
             <h2 class="events__heading">Events & League</h2>
             <hr>
             <div class="events__looking">
-                <div class="events__looking--image">
                     <h3 class="events__looking--heading">Officials Needed</h3>
+            </div>
+            <div class="events__event one">
+                <div class="blur">
+                    <h3>Event 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="events__event two">
+                <div class="blur">
+                    <h3>Event 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         </section>
 
         <!-- Join Form -->
-        <form action="submit" class="joinForm hidden">
+        <form action="submit" class="joinForm">
             <h2 class="joinForm__heading">Sign Up Form</h2>
             <p class="joinForm__close">X</p>
             <div class="joinForm__disclaimer">
@@ -139,6 +149,14 @@
 
             <label for="phone">Phone Number</label>
             <input type="phone" id="phone" name="phone" placeholder="Please enter your phone number." required>
+
+            <label for="program">Program</label>
+            <input type="program" id="program" name="program" placeholder="Please enter the program." required>
+
+            <label for="membership">Membership</label>
+            <input type="membership" id="membership" name="membership" placeholder="Please enter your membership." required>
+
+            <button class="submit">Submit</button>
         </form>
 
         <!-- Footer Section -->
