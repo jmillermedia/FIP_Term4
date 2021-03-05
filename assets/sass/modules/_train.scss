@@ -1,0 +1,282 @@
+.howTo {
+    width: 100%;
+    font-family: $fontStack;
+    background-color: $dark-grey;
+    padding-bottom: 2em;
+
+    &__heading {
+        font-size: 1.5em;
+        color: $main-red;
+        margin: 0 0 1em 0;
+        text-align: center;
+        padding-top: 1em;
+    }
+
+    &__copy {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 1.5em;
+    }
+
+    &__subheading {
+        font-size: 1.25em;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    &__icon {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__points {
+        text-align: center;
+        padding: 1em 0 0.5em;
+    }
+
+    &__stageDesc {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+}
+
+.training {
+    font-family: $fontStack;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    &__heading {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    &__card {
+        background-color: $offwhite;
+        color: $dark-grey;
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2em;
+
+        &--image {
+            height: 183px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            backdrop-filter: blur(2px) brightness(50%);
+        }
+
+        &--icon {
+            width: 60px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            padding: 1em 0 1em;
+            backdrop-filter: blur(1px) brightness(50%);
+        }
+
+        &--heading {
+            text-align: center;
+            color: $offwhite;
+            font-size: 1.5em;
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &--subheading {
+            font-size: 1.25em;
+            padding: 0.5em 0 0.5em;
+            width: 75%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &--copy {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        &--join {
+            background: none;
+            border: $footerRed 2px solid;
+            border-radius: 16px;
+            width: 100px;
+            color: $footerRed;
+            padding: 0.5em;
+            display: block;
+            align-self: center;
+            margin: 0 auto;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(50%) blur(1px);
+}
+
+.events {
+    font-family: $fontStack;
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+    &__heading {
+        font-size: 1.5em;
+        color: $main-red;
+        text-align: center;
+    }
+
+    &__looking {
+        background-color: $main-red;
+        background-image: url(../images/eventsLooking.jpg);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 2em;
+
+        &--heading {
+            font-size: 1.2em;
+            text-align: center;
+        }
+    }
+
+    &__event {
+        background-color: black;
+        background-blend-mode: screen;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 180px;
+        margin-bottom: 2em;
+
+        & h3 {
+            text-align: center;
+            font-size: 1.5em;
+            padding-bottom: 1em;
+        }
+
+        & p {
+            width: 75%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        & .blur {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+
+    & .one {
+        background-image: url(../images/events1.jpg);
+    }
+
+    & .two {
+        background-image: url(../images/events2.jpg);
+    }
+}
+
+.joinForm {
+    font-family: $fontStack;
+    z-index: 102;
+    top: 0;
+    background-color: $offwhite;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: $dark-grey;
+    overflow-x: scroll;
+
+    &__heading {
+        text-align: center;
+        font-size: 1.5em;
+        padding-bottom: 0.75em;
+    }
+
+    &__close {
+        color: $dark-grey;
+        font-size: 2em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-weight: 900;
+        padding: 0.25em 0.25em 0 0;
+    }
+
+    &__disclaimer {
+        font-size: 0.75em;
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1em;
+
+        & li {
+            color: $dark-grey;
+            margin-bottom: 0.75em;
+        }
+    }
+
+    & label {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 60%;
+        margin-bottom: 0.5em;
+    }
+
+    & input {
+        background: none;
+        border: none;
+        border-bottom: 2px solid $main-red;
+        width: 60%;
+        height: 20px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2em;
+
+        &::placeholder {
+            font-size: 0.75em;
+            color: $main-red;
+            opacity: 50%;
+        }
+    }
+
+    & .submit {
+        font-family: $fontStack;
+        color: $offwhite;
+        background-color: $main-red;
+        border: none;
+        font-size: 1.25em;
+        padding: 0.3em;
+        width: 125px;
+        border-radius: 25px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+}
