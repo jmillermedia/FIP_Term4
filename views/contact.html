@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Referees Group</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/reset.css">
+
+</head>
+<body>
+    <main id="app">
+        <h1 class="hidden">Main Site</h1>
+            <div class="burgerButton">
+                <div class="burgerBar1"></div>
+                <div class="burgerBar2"></div>
+                <div class="burgerBar3"></div>
+            </div>
+
+        <!-- Main Navigation Section (mobile and desktop) -->
+        <header class="nav">
+            <h2 class="hidden">Main Nav</h2>
+            <nav class="nav__main hidden">
+                <ul class="nav__main--ul">
+                    <li class="nav__main--li selected">Home</li>
+                    <li class="nav__main--li">About Us</li>
+                    <li class="nav__main--li">Members</li>
+                    <li class="nav__main--li">Train</li>
+                    <li class="nav__main--li">Contact Us</li>
+                </ul>
+            </nav>
+            <nav class="nav__mobile hidden"> <!-- toggle hidden class with JS-->
+                <h2 class="hidden">Mobile Nav</h2>
+                <ul class="nav__mobile--ul">
+                    <li class="nav__mobile--li selected"><a href="/">Home</a></li>
+                    <li class="nav__mobile--li"><a href="/about">About Us</a></li>
+                    <li class="nav__mobile--li"><a href="/members">Members</a></li>
+                    <li class="nav__mobile--li"><a href="/train">Train</a></li>
+                    <li class="nav__mobile--li"><a href="/contact" class="selected">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Header Section -->
+        <section class="header" style="background-image: url(../images/heroContact.jpg);">
+            <h2 class="hidden">Hero Photo Section</h2>
+            <img class="header__logo" src="images/logo.svg" alt="LRG Logo">
+            <p class="header__slogan">Reach Out</p>
+        </section>
+
+        <section class="contact">
+            <h2 class="contact__header">Ready to get in touch?</h2>
+            <hr>
+            <p class="contact__copy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea placeat id fugiat, officia quos nihil? Nobis pariatur fuga officia expedita unde labore minus commodi quo deserunt dignissimos, reiciendis officiis iusto?</p>
+
+            <div class="contact__card">
+                <img src="images/contactCardAddress.svg" alt="Address Icon">
+                <h3>Address</h3>
+                <p>123 King Street</p>
+                <p>London Ontario</p>
+            </div>
+
+            <div class="contact__card">
+                <img src="images/contactCardEmail.svg" alt="Email Icon">
+                <h3>Email</h3>
+                <a href="mailto:lrg@londonrefereesgroup.com">lrg@londonrefereesgroup.com</a>
+            </div>
+
+            <div class="contact__card">
+                <img src="images/contactCardPhone.svg" alt="Phone Icon">
+                <h3>Call Us</h3>
+                <p>226-111-2222</p>
+            </div>
+
+            <form action="submit" class="contactForm">
+                <h2 class="contactForm__heading">Send a Message</h2>
+                <hr>
+
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="phone" id="phone" name="phone" placeholder="Phone Number" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="message">Message</label>
+                <input type="textarea" id="message" name="message" placeholder="Please enter your message." required>
+
+                <button class="submit">Submit</button>
+                </form>
+
+        </section>
+
+        <div class="contactMap">
+            <h2 class="contactMap__heading">Serving London Ontario Arenas:</h2>
+            <hr>
+            <iframe width="100%" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=london%20ontario%20hockey%20arenas&key=AIzaSyCdYz4XmIZhZ1DcmeFvK25CarWnzfkpMm4"></iframe>
+        </div>
+
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer__partners">
+                <h2>Partners:</h2>
+                    <div class="footer__partners--logos">
+                        <a href="#" class="partnerLink"><img src="images/partnerHockeyCanada.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerOHF.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerAllianceHockey.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerOMHA.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerWHA.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerOHA.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="images/partnerSportAbility.svg" alt="Partner Icon"></a>
+                    </div>
+            </div>
+
+            <img src="images/logo.svg" alt="LRG Logo" class="footer__logo">
+
+            <nav class="footer__socialNav">
+                <h2 class="hidden">Social Media Navigation</h2>
+                <ul>
+                    <li><a href="#"><img src="images/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
+                    <li><a href="#"><img src="images/insta.svg" alt="instagram"></a></li>
+                    <li><a href="#"><img src="images/youtube.svg" alt="youtube"></a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__contact">
+                <a href="tel:222-111-2222"><img src="images/phoneIcon.svg" alt="Phone Icon"> 222-111-2222</a>
+                <a href="mailto:lrg@londonrefereesgroup.com"><img src="images/emailIcon.svg" alt="email Icon"> lrg@londonrefereesgroup.com</a>
+            </div>
+
+            <nav class="footer__mainNav">
+                <h2 class="hidden">Footer Nav</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/members">Members</a></li>
+                    <li><a href="/train">Train</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <p class="footer__copyright">© 2020 all rights reserved</p>
+        </footer>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer type="module" src="scripts/main.js"></script>
+</body>
+</html>
