@@ -14,7 +14,7 @@
         background-color: $offwhite;
         color: $dark-grey;
         text-align: center;
-        margin: 1.5rem;
+        margin: 1.5rem 0 1.5rem 0;
         padding: 1rem;
         min-height: 100px;
         display: flex;
@@ -39,8 +39,82 @@
             color: $main-red;
         }
     }
+
 }
 
 .contactForm {
-    width: 75%;
+    width: 100%;
+    background-color: $offwhite;
+    color: $dark-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-radius: 4px;
+
+    &__heading {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 1rem 0 1rem 0;
+    }
+
+    & label {
+        display: none;
+    }
+
+    & input {
+        border: none;
+        border-bottom: 2px $main-red solid;
+        background-color: $offwhite;
+        margin: 1rem 0 1rem 0;
+        width: 75%;
+        height: 1rem;
+        display: block;
+        align-self: center;
+
+        &::placeholder {
+            font-family: $fontStack;
+            color: $light-grey;
+            font-size: 1rem;
+        }
+    }
+
+    & #message {
+        height: 150px;
+
+        &::placeholder {
+            top: 0;
+        }
+    }
+
+    & .submit {
+    border: none;
+    border-radius: 32px;
+    background-color: $main-red;
+    color: $offwhite;
+    font-family: $fontStack;
+    font-size: 1.25rem;
+    width: 40%;
+    padding: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    }
+}
+
+.contactMap {
+    width:100%;
+    height: auto;
+
+    &__heading {
+        font-family: $fontStack;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 1.5rem 0 1.5rem 0;
+    }
+
+    & iframe {
+        height: 500px;
+    }
 }

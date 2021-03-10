@@ -56,18 +56,20 @@
 
         .burgerBar1, .burgerBar2, .burgerBar3 {
             width: 35px;
-            height: 5px;
+            height: 3px;
             background-color: $offwhite;
-            margin: 6px 0;
+            margin: 5px 0;
             transition: all 0.4s;
+            border: 0.5px rgba(163, 163, 163, 0.685) solid;
+
         }
     }
 }
 
 .closeBurger {
     .burgerBar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-7px, 5px);
+    transform: rotate(-45deg) translate(-7px, 5px);
     }
     .burgerBar2 {opacity: 0;}
     .burgerBar3 {
