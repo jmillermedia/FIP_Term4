@@ -53,11 +53,11 @@ if (isset($_POST['submit'])) {
             <nav class="nav__mobile hidden"> <!-- toggle hidden class with JS-->
                 <h2 class="hidden">Mobile Nav</h2>
                 <ul class="nav__mobile--ul">
-                    <li class="nav__mobile--li selected"><a href="#" class="selected">Home</a></li>
-                    <li class="nav__mobile--li"><a href="/about">About Us</a></li>
-                    <li class="nav__mobile--li"><a href="/members">Members</a></li>
-                    <li class="nav__mobile--li"><a href="/train">Train</a></li>
-                    <li class="nav__mobile--li"><a href="/contact">Contact Us</a></li>
+                    <li class="nav__mobile--li"><a href="../views/index.html">Home</a></li>
+                    <li class="nav__mobile--li"><a href="../views/about.html">About Us</a></li>
+                    <li class="nav__mobile--li"><a href="../views/members.html">Members</a></li>
+                    <li class="nav__mobile--li"><a href="../views/train.html">Train</a></li>
+                    <li class="nav__mobile--li"><a href="../views/contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
