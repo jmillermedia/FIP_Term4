@@ -3,7 +3,7 @@
 # London Referees Group - Website Proposal
  Website propsal for London Referees Group 2021
 
-[Project Roadmap - Coming Soon](https://docs.google.com/spreadsheets/d/19bKQ6ZGz-U2W1dZaxSjjux5ulQb5qU52lu3gvD4q2ho/edit#gid=0 'Google Docs')
+[Project Roadmap](https://docs.google.com/spreadsheets/d/19bKQ6ZGz-U2W1dZaxSjjux5ulQb5qU52lu3gvD4q2ho/edit#gid=0 'Google Docs')
 
 ## Our Team:
 Shannon Lounges - Project Manager
