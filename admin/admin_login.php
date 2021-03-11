@@ -63,25 +63,27 @@ if (isset($_POST['submit'])) {
         </header>
 
         <!-- Header Section -->
-        <section class="header" style="background-image: url(../public/images/heroIndex.jpg);">
+        <section class="header" style="background-image: url(../public/images/heroContact.jpg);">
             <h2 class="hidden">Hero Photo Section</h2>
             <img class="header__logo" src="../public/images/logo.svg" alt="LRG Logo">
             <p class="header__slogan">Admin Login</p>
         </section>
 
         <section class="adminForm">
+            <h2 class="adminForm__heading">Admin Login</h2>
+            <hr>
             <?php echo !empty($message)?$message:''; ?>
             <form action="admin_login.php" method="post">
                 <label for="username">Username:</label>
-                <input id="username" type="text" name="username" value="">
+                <input id="username" type="text" name="username" value="" placeholder="Username">
                 <br><br>
                 <label for="password">Password:</label>
-                <input id="password" type="text" name="password">
+                <input id="password" type="password" name="password" placeholder="Password">
                 <br><br>
-                <button type="submit" name="submit">Sign in</button>
+                <button type="submit" name="submit">Sign In</button>
             </form>
         </section>
-    
+
 <footer class="footer">
             <div class="footer__partners">
                 <h2>Partners:</h2>

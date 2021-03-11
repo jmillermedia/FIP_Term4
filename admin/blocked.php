@@ -11,6 +11,6 @@ require_once '../load.php';
 </head>
 <body>
 <h2>Sorry, you have entered incorrect information 3 times. You are locked out, please try again later.</h2>
-    
+
 </body>
 </html>
