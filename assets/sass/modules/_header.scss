@@ -38,14 +38,22 @@
     &__learn {
         width: 35%;
         height: 50px;
-        font-family: $fontStack;
-        font-size: 1.25em;
-        color: $offwhite;
         background: none;
         border: $offwhite solid 2px;
         border-radius: 16px;
         margin: 0 auto;
         transition: all 1s;
+        font-family: $fontStack;
+        font-size: 1.25em;
+        color: $offwhite;
+        text-decoration: none;
+
+        & a {
+            font-family: $fontStack;
+            font-size: 1.25em;
+            color: $offwhite;
+            text-decoration: none;
+        }
 
         &:hover {
             color: $light-grey;

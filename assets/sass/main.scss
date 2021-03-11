@@ -8,6 +8,7 @@
 @import 'modules/_members.scss';
 @import 'modules/_train.scss';
 @import 'modules/_contact.scss';
+@import 'modules/_admin.scss';
 
 body {
     color: $offwhite;
@@ -26,5 +27,6 @@ body {
 hr {
     width: 25%;
     margin-bottom: 1.5em;
-    border: 3px solid $main-red;
+    border: none;
+    border-bottom: 3px solid $main-red;
 }

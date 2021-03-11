@@ -1,0 +1,44 @@
+.adminForm {
+    &__heading {
+        font-family: $fontStack;
+        font-size: 1.5rem;
+        margin: 1rem 0 1rem 0;
+        text-align: center;
+    }
+
+    & form {
+        background-color: $offwhite;
+        padding: 1.5rem;
+        color: $dark-grey;
+        font-family: $fontStack;
+    }
+
+    & label {
+        display: none;
+    }
+
+    & input {
+        display: block;
+        margin: 0 auto;
+        background: none;
+        border: none;
+        border-bottom: $main-red 2px solid;
+        background-color: $offwhite;
+
+        &::placeholder {
+            font-family: $fontStack;
+            font-size: 1rem;
+        }
+    }
+
+    & button {
+        border: none;
+        background-color: $main-red;
+        color: $offwhite;
+        padding: 0.75rem;
+        width: 100px;
+        border-radius: 32px;
+        display: block;
+        margin: 0 auto;
+    }
+}
