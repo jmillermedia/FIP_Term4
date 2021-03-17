@@ -8,7 +8,7 @@
     $dsn = 'mysql:'.http_build_query($db_dsn, '', ';');
 
 
-    $db_user = '';
+    $db_user = 'root';
     $db_pass = '';
 
     try{
