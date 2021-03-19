@@ -3,6 +3,14 @@
     font-size: 3em;
     color: $offwhite;
 
+    .selected {
+        color: $main-red;
+    }
+
+    &__main {
+        display: none;
+    }
+
     &__mobile {
         z-index: 100;
         position: fixed;
@@ -34,10 +42,6 @@
         & a {
             color: $offwhite;
             text-decoration: none;
-
-            &.selected {
-                color: $main-red;
-            }
         }
     }
 }
@@ -75,5 +79,40 @@
     .burgerBar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .burgerButton {
+        display: none;
+    }
+
+    .nav {
+        &__mobile {
+            display: none;
+        }
+        &__main {
+            display: block;
+            margin: 0 auto;
+            font-size: 2rem;
+            position: absolute;
+            width: 100%;
+            padding-top: 6.5rem;
+
+            &--ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            &--li {
+                padding: 0.5em;
+                & a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+            }
+        }
     }
 }
