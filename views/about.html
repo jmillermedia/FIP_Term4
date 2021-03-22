@@ -21,13 +21,13 @@
         <!-- Main Navigation Section (mobile and desktop) -->
         <header class="nav">
             <h2 class="hidden">Main Nav</h2>
-            <nav class="nav__main hidden">
+            <nav class="nav__main">
                 <ul class="nav__main--ul">
-                    <li class="nav__main--li selected">Home</li>
-                    <li class="nav__main--li">About Us</li>
-                    <li class="nav__main--li">Members</li>
-                    <li class="nav__main--li">Train</li>
-                    <li class="nav__main--li">Contact Us</li>
+                    <li class="nav__main--li"><a href="../views/index.html">Home</a></li>
+                    <li class="nav__main--li selected"><a href="../views/about.html">About Us</a></li>
+                    <li class="nav__main--li"><a href="../views/members.html">Members</a></li>
+                    <li class="nav__main--li"><a href="../views/train.html">Train</a></li>
+                    <li class="nav__main--li"><a href="../views/contact.html">Contact Us</a></li>
                 </ul>
             </nav>
             <nav class="nav__mobile hidden"> <!-- toggle hidden class with JS-->
@@ -53,41 +53,50 @@
         <section class="aboutUs">
             <h2 class="aboutUs__heading">London Referees Group</h2>
             <hr class="aboutUs__underline">
-            <p class="aboutUs__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem repellendus veritatis quibusdam amet explicabo minima, perferendis, natus, harum sapiente fuga minus laboriosam! Eos, voluptas eligendi repudiandae deleniti sit ullam minima.</p>
-            <p class="aboutUs__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem repellendus veritatis quibusdam amet explicabo minima, perferendis, natus, harum sapiente fuga minus laboriosam! Eos, voluptas eligendi repudiandae deleniti sit ullam minima.</p>
-            <div class="aboutUs__fact">
-                <h3 class="aboutUs__fact--heading">Vision:</h3>
-                <p class="aboutUs__fact--copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor libero, praesentium nulla quia itaque voluptate dolores, doloremque a quis sequi, mollitia porro! Quas corporis at necessitatibus, adipisci similique dolorum.</p>
+            <div class="aboutUs__copy">
+                <div class="aboutUs__copy--p">
+                    <p>LRG is a referee association that was established on 15July 2007 at London, Ontario.</p>
+                    <p>We are an With over 225 members association where individual can grow professionally as well as personally. People from all skills level are welcomed at our association.</p>
+                </div>
+                <img class="aboutUs__logo" src="../public/images/logo.svg" alt="LRG Logo">
             </div>
-            <div class="aboutUs__fact">
-                <h3 class="aboutUs__fact--heading">Mission:</h3>
-                <p class="aboutUs__fact--copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor libero, praesentium nulla quia itaque voluptate dolores, doloremque a quis sequi, mollitia porro! Quas corporis at necessitatibus, adipisci similique dolorum.</p>
-            </div>
-            <div class="aboutUs__fact">
-                <h3 class="aboutUs__fact--heading">Values:</h3>
-                <p class="aboutUs__fact--copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolor libero, praesentium nulla quia itaque voluptate dolores, doloremque a quis sequi, mollitia porro! Quas corporis at necessitatibus, adipisci similique dolorum.</p>
+            <div class="aboutUs__facts">
+                <div class="aboutUs__fact">
+                    <h3 class="aboutUs__fact--heading">Vision:</h3>
+                    <p class="aboutUs__fact--copy">To promote the game of hockey through fair and safe play, and a respect for all individuals involved in the game.</p>
+                </div>
+                <div class="aboutUs__fact">
+                    <h3 class="aboutUs__fact--heading">Mission:</h3>
+                    <p class="aboutUs__fact--copy">LRG  is committed to providing a high standard and quality hockeyofficiating in the City of London and surrounding area.</p>
+                </div>
+                <div class="aboutUs__fact">
+                    <h3 class="aboutUs__fact--heading">Values:</h3>
+                    <p class="aboutUs__fact--copy">LRG's core values are integrity, leadership, perseverance, respect and teamwork.</p>
+                </div>
             </div>
         </section>
 
         <!-- Meet Our Executive Members Section -->
         <section class="meetUs">
-            <img src="../public/images/puckBreak.svg" alt="Puck Page Break" class="meetUs__pageBreak">
+            <img src="../public/images/puckBreak.svg" alt="Puck Page Break" class="puckBreak" style="display: unset;">
             <h2 class="meetUs__heading">Meet Our Executive Members</h2>
             <hr class="meetUs__underline">
-            <div class="meetUs__member">
-                <img src="../public/images/memberPic1.jpg" alt="President" class="meetUs__profilePic">
-                <p class="meetUs__name">Carl Vink</p>
-                <p class="meetUs__role">President</p>
-            </div>
-            <div class="meetUs__member">
-                <img src="../public/images/memberPic2.jpg" alt="Vice-President Picture" class="meetUs__profilePic">
-                <p class="meetUs__name">Joe Masse</p>
-                <p class="meetUs__role">Vice-President</p>
-            </div>
-            <div class="meetUs__member">
-                <img src="../public/images/memberPic3.jpg" alt="Secretary Picture" class="meetUs__profilePic">
-                <p class="meetUs__name">Jane Bray</p>
-                <p class="meetUs__role">Secretary</p>
+            <div class="meetUs__members">
+                <div class="meetUs__member">
+                    <img src="../public/images/memberPic1.jpg" alt="President" class="meetUs__profilePic">
+                    <p class="meetUs__name">Carl Vink</p>
+                    <p class="meetUs__role">President</p>
+                </div>
+                <div class="meetUs__member">
+                    <img src="../public/images/memberPic2.jpg" alt="Vice-President Picture" class="meetUs__profilePic">
+                    <p class="meetUs__name">Joe Masse</p>
+                    <p class="meetUs__role">Vice-President</p>
+                </div>
+                <div class="meetUs__member">
+                    <img src="../public/images/memberPic3.jpg" alt="Secretary Picture" class="meetUs__profilePic">
+                    <p class="meetUs__name">Jane Bray</p>
+                    <p class="meetUs__role">Secretary</p>
+                </div>
             </div>
         </section>
 
