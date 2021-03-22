@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: color;
     display: grid;
     grid-template-columns: 1fr;
@@ -30,8 +30,8 @@
         justify-content: center;
         align-content: center;
         color: $offwhite;
-        font-family: 'alegreya_sans-light';
-        text-transform: uppercase;
+        font-family: 'source_sans-regular';
+        // text-transform: uppercase;
         font-size: 2.5em;
     }
 
