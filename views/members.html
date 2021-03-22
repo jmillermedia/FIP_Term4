@@ -21,13 +21,13 @@
         <!-- Main Navigation Section (mobile and desktop) -->
         <header class="nav">
             <h2 class="hidden">Main Nav</h2>
-            <nav class="nav__main hidden">
+            <nav class="nav__main">
                 <ul class="nav__main--ul">
-                    <li class="nav__main--li selected">Home</li>
-                    <li class="nav__main--li">About Us</li>
-                    <li class="nav__main--li">Members</li>
-                    <li class="nav__main--li">Train</li>
-                    <li class="nav__main--li">Contact Us</li>
+                    <li class="nav__main--li"><a href="../views/index.html">Home</a></li>
+                    <li class="nav__main--li"><a href="../views/about.html">About Us</a></li>
+                    <li class="nav__main--li selected"><a href="../views/members.html">Members</a></li>
+                    <li class="nav__main--li"><a href="../views/train.html">Train</a></li>
+                    <li class="nav__main--li"><a href="../views/contact.html">Contact Us</a></li>
                 </ul>
             </nav>
             <nav class="nav__mobile hidden"> <!-- toggle hidden class with JS-->
@@ -52,39 +52,48 @@
 
         <!-- Become A Member Section -->
         <section class="becomeMember">
-            <div class="becomeMember__heading">
-                <img src="../public/images/becomeMember.jpg" alt="Referee officiating." class="becomeMember__heading--image">
-                <h2 class="becomeMember__heading--title">Become A Member</h2>
+            <div class="becomeMember__card">
+                <div class="becomeMember__BGImage">
+                    <img src="../public/images/becomeMember.jpg" alt="Referee officiating." class="becomeMember__BGImage--image">
+                    <h2 class="becomeMember__BGImage--title">Become A Member</h2>
+                </div>
+                    <h3 class="becomeMember__question">What is membership for?</h3>
+                    <p class="becomeMember__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore magnam, veniam incidunt ducimus sint. Nesciunt minus eaque repellat aliquam cumque voluptate porro neque consectetur vero, eos adipisci sequi illum?</p>
             </div>
-                <h3 class="becomeMember__question">What is membership for?</h3>
-                <p class="becomeMember__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore magnam, veniam incidunt ducimus sint. Nesciunt minus eaque repellat aliquam cumque voluptate porro neque consectetur vero, eos adipisci sequi illum?</p>
+
+            <div class="becomeMember__joinNow">
+                <h2 class="becomeMember__heading">Ready to join the LRG officiating team?</h2>
                 <button class="becomeMember__join">Join Now!</button>
+            </div>
 
                 <div class="becomeMember__schedule">
-                <h3 class="becomeMember__question">View Game Scheduling</h3>
+                <h3 class="becomeMember__heading">View Game Scheduling</h3>
                 <button class="becomeMember__join">Click Here!</button>
             </div>
         </section>
 
         <!-- Engagement Section -->
         <section class="engagement">
-            <h2 class="hidden">Engagement Section</h2>
             <img src="../public/images/puckBreak.svg" alt="Puck Page Break" class="engagement__break">
-            <div class="engagement__piece">
-                <img src="../public/images/engagement1.jpg" alt="Hockey Players with Referee" class="engagement__piece--image">
-                <h2 class="engagement__piece--heading">Skill Building</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam unde amet, delectus cum repudiandae labore. </p>
-            </div>
-            <div class="engagement__piece">
-                <img src="../public/images/engagement2.jpg" alt="Hockey Players with Referee" class="engagement__piece--image">
-                <h2 class="engagement__piece--heading">Skill Building</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam unde amet, delectus cum repudiandae labore. </p>
-            </div>
-            <div class="engagement__piece">
-                <img src="../public/images/engagement3.jpg" alt="Hockey Players with Referee" class="engagement__piece--image">
-                <h2 class="engagement__piece--heading">Skill Building</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam unde amet, delectus cum repudiandae labore. </p>
-            </div>
+            <h2>Engagement Section</h2>
+            <hr>
+            <div class="engagement__pieces">
+                <div class="engagement__piece">
+                    <img src="../public/images/engagement1.jpg" alt="Hockey Players with Referee" class="engagement__piece--image">
+                    <h2 class="engagement__piece--heading">Skill Building</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam unde amet, delectus cum repudiandae labore. </p>
+                </div>
+                <div class="engagement__piece">
+                    <img src="../public/images/engagement2.jpg" alt="Hockey Players with Referee" class="engagement__piece--image">
+                    <h2 class="engagement__piece--heading">Skill Building</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam unde amet, delectus cum repudiandae labore. </p>
+                </div>
+                <div class="engagement__piece">
+                    <img src="../public/images/engagement3.jpg" alt="Hockey Players with Referee" class="engagement__piece--image">
+                    <h2 class="engagement__piece--heading">Skill Building</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam unde amet, delectus cum repudiandae labore. </p>
+                </div>
+        </div>
         </section>
 
         <!-- Resources Section -->
@@ -139,8 +148,8 @@
 
             <p class="footer__copyright">© 2020 all rights reserved</p>
         </footer>
-
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script defer type="module" src="../public/scripts/main.js"></script>
 </body>
