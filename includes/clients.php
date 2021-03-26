@@ -1,6 +1,6 @@
 <?php
 include("connect.php");
-include("functions.php");
+include("../admin/scripts/functions.php");
 
     $result = getClientsInfo($pdo);
 
