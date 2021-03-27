@@ -1,4 +1,11 @@
 .adminForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: $dark-grey;
+    padding: 3rem;
+
     &__heading {
         font-family: $fontStack;
         font-size: 1.5rem;
@@ -11,6 +18,9 @@
         padding: 1.5rem;
         color: $dark-grey;
         font-family: $fontStack;
+        width: 100%;
+        max-width: 400px;
+        align-self: center;
     }
 
     & label {
@@ -40,5 +50,13 @@
         border-radius: 32px;
         display: block;
         margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .adminForm {
+        & form {
+
+        }
     }
 }

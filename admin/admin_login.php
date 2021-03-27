@@ -41,13 +41,13 @@ if (isset($_POST['submit'])) {
         <!-- Main Navigation Section (mobile and desktop) -->
         <header class="nav">
             <h2 class="hidden">Main Nav</h2>
-            <nav class="nav__main hidden">
+            <nav class="nav__main">
                 <ul class="nav__main--ul">
-                    <li class="nav__main--li selected">Home</li>
-                    <li class="nav__main--li">About Us</li>
-                    <li class="nav__main--li">Members</li>
-                    <li class="nav__main--li">Train</li>
-                    <li class="nav__main--li">Contact Us</li>
+                    <li class="nav__main--li"><a href="../views/index.html">Home</a></li>
+                    <li class="nav__main--li"><a href="../views/about.html">About Us</a></li>
+                    <li class="nav__main--li"><a href="../views/members.html">Members</a></li>
+                    <li class="nav__main--li"><a href="../views/train.html">Train</a></li>
+                    <li class="nav__main--li"><a href="../views/contact.html">Contact Us</a></li>
                 </ul>
             </nav>
             <nav class="nav__mobile hidden"> <!-- toggle hidden class with JS-->
@@ -118,11 +118,11 @@ if (isset($_POST['submit'])) {
             <nav class="footer__mainNav">
                 <h2 class="hidden">Footer Nav</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/members">Members</a></li>
-                    <li><a href="/train">Train</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="../views/index.html">Home</a></li>
+                    <li><a href="../views/about.html">About Us</a></li>
+                    <li><a href="../views/members.html">Members</a></li>
+                    <li><a href="../views/train.html">Train</a></li>
+                    <li><a href="../views/contact.html">Contact Us</a></li>
                 </ul>
             </nav>
 

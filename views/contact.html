@@ -21,13 +21,13 @@
         <!-- Main Navigation Section (mobile and desktop) -->
         <header class="nav">
             <h2 class="hidden">Main Nav</h2>
-            <nav class="nav__main hidden">
+            <nav class="nav__main">
                 <ul class="nav__main--ul">
-                    <li class="nav__main--li selected">Home</li>
-                    <li class="nav__main--li">About Us</li>
-                    <li class="nav__main--li">Members</li>
-                    <li class="nav__main--li">Train</li>
-                    <li class="nav__main--li">Contact Us</li>
+                    <li class="nav__main--li"><a href="../views/index.html">Home</a></li>
+                    <li class="nav__main--li"><a href="../views/about.html">About Us</a></li>
+                    <li class="nav__main--li"><a href="../views/members.html">Members</a></li>
+                    <li class="nav__main--li"><a href="../views/train.html">Train</a></li>
+                    <li class="nav__main--li selected"><a href="#">Contact Us</a></li>
                 </ul>
             </nav>
             <nav class="nav__mobile hidden"> <!-- toggle hidden class with JS-->
@@ -54,54 +54,56 @@
             <hr>
             <p class="contact__copy">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea placeat id fugiat, officia quos nihil? Nobis pariatur fuga officia expedita unde labore minus commodi quo deserunt dignissimos, reiciendis officiis iusto?</p>
 
-            <div class="contact__card">
-                <img src="../public/images/contactCardAddress.svg" alt="Address Icon">
-                <h3>Address</h3>
-                <p>123 King Street</p>
-                <p>London Ontario</p>
+            <div class="contact__cardWrapper">
+                <div class="contact__card">
+                    <img src="../public/images/contactCardAddress.svg" alt="Address Icon">
+                    <h3>Address</h3>
+                    <p>123 King Street</p>
+                    <p>London Ontario</p>
+                </div>
+
+                <div class="contact__card">
+                    <img src="../public/images/contactCardEmail.svg" alt="Email Icon">
+                    <h3>Email</h3>
+                    <a href="mailto:lrg@londonrefereesgroup.com">lrg@londonrefereesgroup.com</a>
+                </div>
+
+                <div class="contact__card">
+                    <img src="../public/images/contactCardPhone.svg" alt="Phone Icon">
+                    <h3>Call Us</h3>
+                    <p>226-111-2222</p>
+                </div>
             </div>
 
-            <div class="contact__card">
-                <img src="../public/images/contactCardEmail.svg" alt="Email Icon">
-                <h3>Email</h3>
-                <a href="mailto:lrg@londonrefereesgroup.com">lrg@londonrefereesgroup.com</a>
+            <div class="formMapWrapper">
+                <form action="submit" class="contactForm">
+                    <h2 class="contactForm__heading">Send a Message</h2>
+                    <hr>
+
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="phone" id="phone" name="phone" placeholder="Phone Number" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+                    <label for="message">Message</label>
+                    <input type="textarea" id="message" name="message" placeholder="Please enter your message." required>
+
+                    <button class="submit">Submit</button>
+                    </form>
+
+                <div class="contactMap">
+                    <h2 class="hidden">Serving London Ontario Arenas:</h2>
+                    <iframe width="100%" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=london%20ontario%20hockey%20arenas&key=AIzaSyCdYz4XmIZhZ1DcmeFvK25CarWnzfkpMm4"></iframe>
+                </div>
             </div>
-
-            <div class="contact__card">
-                <img src="../public/images/contactCardPhone.svg" alt="Phone Icon">
-                <h3>Call Us</h3>
-                <p>226-111-2222</p>
-            </div>
-
-            <form action="submit" class="contactForm">
-                <h2 class="contactForm__heading">Send a Message</h2>
-                <hr>
-
-                <label for="firstname">First Name</label>
-                <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
-
-                <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
-
-                <label for="phone">Phone Number</label>
-                <input type="phone" id="phone" name="phone" placeholder="Phone Number" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-
-                <label for="message">Message</label>
-                <input type="textarea" id="message" name="message" placeholder="Please enter your message." required>
-
-                <button class="submit">Submit</button>
-                </form>
-
         </section>
-
-        <div class="contactMap">
-            <h2 class="contactMap__heading">Serving London Ontario Arenas:</h2>
-            <hr>
-            <iframe width="100%" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=london%20ontario%20hockey%20arenas&key=AIzaSyCdYz4XmIZhZ1DcmeFvK25CarWnzfkpMm4"></iframe>
-        </div>
 
 
         <!-- Footer Section -->
@@ -139,11 +141,11 @@
             <nav class="footer__mainNav">
                 <h2 class="hidden">Footer Nav</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/members">Members</a></li>
-                    <li><a href="/train">Train</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="../views/index.html">Home</a></li>
+                    <li><a href="../views/about.html">About Us</a></li>
+                    <li><a href="../views/members.html">Members</a></li>
+                    <li><a href="../views/train.html">Train</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </nav>
 
