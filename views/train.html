@@ -21,13 +21,13 @@
         <!-- Main Navigation Section (mobile and desktop) -->
         <header class="nav">
             <h2 class="hidden">Main Nav</h2>
-            <nav class="nav__main hidden">
+            <nav class="nav__main">
                 <ul class="nav__main--ul">
-                    <li class="nav__main--li">Home</li>
-                    <li class="nav__main--li">About Us</li>
-                    <li class="nav__main--li">Members</li>
-                    <li class="nav__main--li selected">Train</li>
-                    <li class="nav__main--li">Contact Us</li>
+                    <li class="nav__main--li"><a href="../views/index.html">Home</a></li>
+                    <li class="nav__main--li"><a href="../views/about.html">About Us</a></li>
+                    <li class="nav__main--li"><a href="../views/members.html">Members</a></li>
+                    <li class="nav__main--li selected"><a href="../views/train.html">Train</a></li>
+                    <li class="nav__main--li"><a href="../views/contact.html">Contact Us</a></li>
                 </ul>
             </nav>
             <nav class="nav__mobile hidden"> <!-- toggle hidden class with JS-->
@@ -50,19 +50,29 @@
         </section>
 
         <!-- How To Be A Ref Section -->
-        <section class="howTo">
-            <h2 class="howTo__heading">How To Be A Referee</h2>
-            <hr class="howTo__underline">
-            <p class="howTo__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perferendis consequuntur velit ipsa eveniet. Quas amet similique, corrupti voluptatibus magnam nostrum voluptates, dolore iusto ex, sapiente quasi excepturi ab explicabo.</p>
-            <p class="howTo__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perferendis consequuntur velit ipsa eveniet. Quas amet similique, corrupti voluptatibus magnam nostrum voluptates, dolore iusto ex, sapiente quasi excepturi ab explicabo.</p>
-            <h3 class="howTo__subheading">Progression:</h3>
-            <img src="../public/images/howToIcon1.svg" alt="Referee Making a Call icon" class="howTo__icon">
-            <h4 class="howTo__points">Stage XYZ</h4>
-            <p class="howTo__stageDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-            <img src="../public/images/howToIcon2.svg" alt="Referee Making a Call icon" class="howTo__icon">
-            <h4 class="howTo__points">Stage XYZ</h4>
-            <p class="howTo__stageDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </section>
+        <div class="howToWrapper">
+            <section class="howTo">
+                <div class="howTo__copySection">
+                    <h2 class="howTo__heading">How To Be A Referee</h2>
+                    <hr class="howTo__underline">
+                    <p class="howTo__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perferendis consequuntur velit ipsa eveniet. Quas amet similique, corrupti voluptatibus magnam nostrum voluptates, dolore iusto ex, sapiente quasi excepturi ab explicabo.</p>
+                    <p class="howTo__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perferendis consequuntur velit ipsa eveniet. Quas amet similique, corrupti voluptatibus magnam nostrum voluptates, dolore iusto ex, sapiente quasi excepturi ab explicabo.</p>
+                </div>
+                <div class="howTo__progressionSection">
+                    <h3 class="howTo__subheading">Progression:</h3>
+                    <div class="howTo__progressionSection--first">
+                        <img src="../public/images/howToIcon1.svg" alt="Referee Making a Call icon" class="howTo__icon">
+                        <h4 class="howTo__points">Stage XYZ</h4>
+                        <p class="howTo__stageDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                    <div class="howTo__progressionSection--second">
+                        <img src="../public/images/howToIcon2.svg" alt="Referee Making a Call icon" class="howTo__icon">
+                        <h4 class="howTo__points">Stage XYZ</h4>
+                        <p class="howTo__stageDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <img src="../public/images/puckBreak.svg" alt="Puck Page Break" class="puckBreak">
 
@@ -70,6 +80,7 @@
         <section class="training">
             <h2 class="training__heading">Training</h2>
             <hr>
+            <div class="training__cards">
             <div class="training__card">
                 <div style="background-image: url(../public/images/trainCard1.jpg)" alt="Hockey team with coach" class="training__card--image">
                     <div class="blur">
@@ -92,12 +103,14 @@
                 <p class="training__card--copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nostrum dolore minus, ea, repellat dolor debitis earum odio fugit unde tempora praesentium. Beatae vitae nostrum voluptatem temporibus, debitis quos repellendus.</p>
                 <button class="training__card--join">Join Now!</button>
             </div>
+        </div>
         </section>
 
         <!-- Events & League Section -->
         <section class="events">
             <h2 class="events__heading">Events & League</h2>
             <hr>
+            <div class="events__cards">
             <div class="events__looking">
                     <h3 class="events__looking--heading">Officials Needed</h3>
             </div>
@@ -113,10 +126,12 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
+        </div>
         </section>
 
         <!-- Join Form -->
-        <form action="submit" class="joinForm">
+        <form action="submit" class="joinForm hidden">
+            <div class="joinFormWrapper">
             <h2 class="joinForm__heading">Sign Up Form</h2>
             <p class="joinForm__close">X</p>
             <div class="joinForm__disclaimer">
@@ -130,7 +145,7 @@
                 <li>Attend a minimum of 3 hrs of on ice Exhibition Training Games</li>
                 <li>Attend Monthly Membership Meetings</li>
                 <li>Be available one day every weekend to skate 2 or 3 games (Sept-March)</li>
-                <li>If you have any questions or comments please send to devprogram@londonrefereesgroup.com</li>
+                <li>If you have any questions or comments please send to <a href='mailto:devprogram@londonrefereesgroup.com'>devprogram@londonrefereesgroup.com</a></li>
             </ul>
             </div>
             <label for="firstname">First Name</label>
@@ -156,6 +171,7 @@
             <input type="membership" id="membership" name="membership" placeholder="Please enter your membership." required>
 
             <button class="submit">Submit</button>
+        </div>
         </form>
 
         <!-- Footer Section -->
@@ -207,5 +223,6 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script defer type="module" src="../public/scripts/main.js"></script>
+    <script defer type="module" src="../public/scripts/modules/train.js"></script>
 </body>
 </html>

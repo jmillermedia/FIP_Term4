@@ -1,8 +1,20 @@
-.howTo {
+.howToWrapper {
     width: 100%;
+    background-color: $dark-grey;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.howTo {
+    width: 75%;
     font-family: $fontStack;
     background-color: $dark-grey;
     padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 
     &__heading {
         font-size: 1.5em;
@@ -56,13 +68,20 @@
         text-align: center;
     }
 
+    &__cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
     &__card {
         background-color: $offwhite;
         color: $dark-grey;
         width: 75%;
         display: block;
-        margin: 0 auto;
-        margin-bottom: 2em;
+        margin: 1.5rem;
 
         &--image {
             height: 183px;
@@ -138,6 +157,13 @@
         text-align: center;
     }
 
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
     &__looking {
         background-color: $main-red;
         background-image: url(../images/eventsLooking.jpg);
@@ -198,85 +224,72 @@
     }
 }
 
-.joinForm {
-    font-family: $fontStack;
-    z-index: 102;
-    top: 0;
-    background-color: $offwhite;
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    color: $dark-grey;
-    overflow-x: scroll;
-
-    &__heading {
-        text-align: center;
-        font-size: 1.5em;
-        padding-bottom: 0.75em;
+@media screen and (min-width:768px) {
+    .howTo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "howTo__copySection howTo__progressionSection";
     }
 
-    &__close {
-        color: $dark-grey;
-        font-size: 2em;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-weight: 900;
-        padding: 0.25em 0.25em 0 0;
+    .howTo__copySection { grid-area: howTo__copySection; }
+
+    .howTo__progressionSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 1.7fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "howTo__subheading howTo__subheading"
+            "howTo__progressionSection--first howTo__progressionSection--second";
+        grid-area: howTo__progressionSection;
     }
 
-    &__disclaimer {
-        font-size: 0.75em;
+    .howTo__subheading {
+        grid-area: howTo__subheading;
+        margin-top: 1.5rem;
+        }
+
+    .howTo__progressionSection--first {
+        grid-area: howTo__progressionSection--first;
+        align-self: baseline;
+        justify-self: center;
+        }
+
+    .howTo__progressionSection--second {
+            grid-area: howTo__progressionSection--second;
+            align-self: baseline;
+            justify-self: center;
+        }
+
+    .training {
         width: 75%;
         display: block;
         margin: 0 auto;
-        margin-bottom: 1em;
+        &__cards {
+            flex-direction: row;
+            justify-content: space-around;
+        }
 
-        & li {
-            color: $dark-grey;
-            margin-bottom: 0.75em;
+        &__card {
+            max-width: 370px;
         }
     }
 
-    & label {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        width: 60%;
-        margin-bottom: 0.5em;
-    }
+    .events {
+        &__cards {
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            justify-content: space-around;
+        }
 
-    & input {
-        background: none;
-        border: none;
-        border-bottom: 2px solid $main-red;
-        width: 60%;
-        height: 20px;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 2em;
-
-        &::placeholder {
-            font-size: 0.75em;
-            color: $main-red;
-            opacity: 50%;
+        &__event, &__looking {
+            max-width: 300px;
+            margin: 1rem;
         }
     }
 
-    & .submit {
-        font-family: $fontStack;
-        color: $offwhite;
-        background-color: $main-red;
-        border: none;
-        font-size: 1.25em;
-        padding: 0.3em;
-        width: 125px;
-        border-radius: 25px;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 1em;
-    }
 }
