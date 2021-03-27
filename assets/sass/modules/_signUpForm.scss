@@ -1,0 +1,118 @@
+.joinFormWrapper {
+    width: 100%;
+    background-color: $offwhite;
+    display: block;
+    margin: 0 auto;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.joinForm {
+    position: fixed;
+    font-family: $fontStack;
+    z-index: 102;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.651);
+    width: 100%;
+    height: 100%;
+    color: $dark-grey;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &__heading {
+        text-align: center;
+        font-size: 1.5rem;
+        padding-bottom: 0.75rem;
+    }
+
+    &__close {
+        color: $dark-grey;
+        font-size: 2em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-weight: 900;
+        padding: 0.25em 0.25em 0 0;
+        cursor: pointer;
+    }
+
+    &__disclaimer {
+        font-size: 0.75em;
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1em;
+
+        & li {
+            color: $dark-grey;
+            margin-bottom: 0.75em;
+            & a {
+                color: $footerRed;
+                text-decoration: none;
+            }
+        }
+    }
+
+    & label {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 60%;
+        margin-bottom: 0.5em;
+    }
+
+    & input {
+        background: none;
+        border: none;
+        border-bottom: 2px solid $main-red;
+        width: 60%;
+        height: 20px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2em;
+
+        &::placeholder {
+            font-size: 0.75em;
+            color: $main-red;
+            opacity: 50%;
+        }
+    }
+
+    & .submit {
+        font-family: $fontStack;
+        color: $offwhite;
+        background-color: $main-red;
+        border: none;
+        font-size: 1.25em;
+        padding: 0.3em;
+        width: 125px;
+        border-radius: 25px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .joinFormWrapper {
+        width: 75%;
+    }
+    .joinForm {
+        font-size: 1.5rem;
+        &__heading {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        &__disclaimer {
+            font-size: 1.5rem;
+        }
+        & input {
+            max-width: 35%;
+            &::placeholder {
+                font-size: 1rem;
+            }
+        }
+        &__close {
+            color: $offwhite;
+        }
+    }
+}
