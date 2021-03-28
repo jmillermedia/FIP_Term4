@@ -99,18 +99,12 @@
             <h2 class="events__heading">Events & League</h2>
             <hr>
             <div class="events__looking">
-                    <h3 class="events__looking--heading">Officials Needed</h3>
-            </div>
-            <div class="events__event one">
+                <h3 class="events__looking--heading">Officials Needed</h3>
+        </div>
+            <div v-for="event, index in events" class="events__event one">
                 <div class="blur">
-                    <h3>Event 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="events__event two">
-                <div class="blur">
-                    <h3>Event 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>{{event.event_title}}</h3>
+                    <p>{{event.event_text}}</p>
                 </div>
             </div>
         </section>

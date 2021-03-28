@@ -70,20 +70,10 @@
         <section class="engagement">
             <h2 class="hidden">Engagement Section</h2>
             <img src="../public/images/puckBreak.svg" alt="Puck Page Break" class="engagement__break">
-            <div class="engagement__piece">
-                <img src="../public/images/engagement1.jpg" alt="Hockey Players with Referee" class="engagement__piece--image">
-                <h2 class="engagement__piece--heading">Skill Building</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam unde amet, delectus cum repudiandae labore. </p>
-            </div>
-            <div class="engagement__piece">
-                <img src="../public/images/engagement2.jpg" alt="Hockey Players with Referee" class="engagement__piece--image">
-                <h2 class="engagement__piece--heading">Skill Building</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam unde amet, delectus cum repudiandae labore. </p>
-            </div>
-            <div class="engagement__piece">
-                <img src="../public/images/engagement3.jpg" alt="Hockey Players with Referee" class="engagement__piece--image">
-                <h2 class="engagement__piece--heading">Skill Building</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam unde amet, delectus cum repudiandae labore. </p>
+            <div v-for="engage, index in engages" class="engagement__piece">
+                <img :src='"../public/images/" + engage.engage_image' alt="Hockey Players with Referee" class="engagement__piece--image">
+                <h2 class="engagement__piece--heading">{{engage.engage_title}}</h2>
+                <p>{{engage.engage_text}}</p>
             </div>
         </section>
 

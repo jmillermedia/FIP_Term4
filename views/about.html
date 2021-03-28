@@ -75,20 +75,10 @@
             <h2 class="meetUs__heading">Meet Our Executive Members</h2>
             <hr class="meetUs__underline">
 
-            <div class="meetUs__member">
-                <img src="../public/images/memberPic1.jpg" alt="President" class="meetUs__profilePic">
-                <p class="meetUs__name">Carl Vink</p>
-                <p class="meetUs__role">President</p>
-            </div>
-            <div class="meetUs__member">
-                <img src="../public/images/memberPic2.jpg" alt="Vice-President Picture" class="meetUs__profilePic">
-                <p class="meetUs__name">Joe Masse</p>
-                <p class="meetUs__role">Vice-President</p>
-            </div>
-            <div class="meetUs__member">
-                <img src="../public/images/memberPic3.jpg" alt="Secretary Picture" class="meetUs__profilePic">
-                <p class="meetUs__name">Jane Bray</p>
-                <p class="meetUs__role">Secretary</p>
+            <div v-for="executive, index in executives" class="meetUs__member">
+                <img :src='"../public/images/" + executive.execs_image' alt="executive member image" class="meetUs__profilePic">
+                <p class="meetUs__name">{{executive.execs_name}}</p>
+                <p class="meetUs__role">{{executive.execs_position}}</p>
             </div>
 
         </section>
