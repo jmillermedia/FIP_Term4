@@ -1,11 +1,47 @@
-(() => {
-    console.log('fired!');
-    const vm = new Vue({
+import { fetchData } from "../scripts/modules/DataMiner.js";
+
+const myVM = (() => {
+    let vue_vm = new Vue({
         data: {
+            clients: [],
+            engages: [],
+            events: [],
+            executives: []
         },
 
         created: function () {
             console.log(`Vue's alive`)
+        },
+
+        mounted: function(){          
+            fetchData("../includes/clients.php")
+            .then(data => {
+                data.forEach(client => this.clients.push(client));
+                })
+            .catch(err => console.log(err));
+
+            fetchData("../includes/engage.php")
+            .then(data => {
+                data.forEach(engage => this.engages.push(engage));
+                })
+            .catch(err => console.log(err));
+
+
+
+            fetchData("../includes/events.php")
+            .then(data => {
+                data.forEach(event => this.events.push(event));
+                })
+            .catch(err => console.log(err));
+
+
+
+            fetchData("../includes/execs.php")
+            .then(data => {
+                data.forEach(executive => this.executives.push(executive));
+                })
+            .catch(err => console.log(err));
+
         },
 
         methods: {
