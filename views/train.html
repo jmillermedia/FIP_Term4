@@ -106,7 +106,6 @@
         </div>
         </section>
 
-        <!-- Events & League Section -->
         <section class="events">
             <h2 class="events__heading">Events & League</h2>
             <hr>
@@ -114,11 +113,11 @@
             <div class="events__looking">
                     <h3 class="events__looking--heading">Officials Needed</h3>
             </div>
-            <div v-for="event, index in events" class="events__event one">
-                <div class="blur">
-                    <h3>{{event.event_title}}</h3>
-                    <p>{{event.event_text}}</p>
-                </div>
+            <div v-for="event, index in events" class="events__event blur">
+                    <div :style='event.event_style'>
+                        <h3>{{event.event_title}}</h3>
+                        <p>{{event.event_text}}</p>
+                    </div>
             </div>
         </div>
         </section>
