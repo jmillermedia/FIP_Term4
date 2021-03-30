@@ -76,18 +76,18 @@
             </div>
 
             <div class="formMapWrapper">
-                <form action="submit" class="contactForm">
+                <form action="./includes/sendContact.php" method="POST" class="contactForm">
                     <h2 class="contactForm__heading">Send a Message</h2>
                     <hr>
 
                     <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                    <input type="text" id="firstname" name="fname" placeholder="First Name" required>
 
                     <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+                    <input type="text" id="lastname" name="lname" placeholder="Last Name" required>
 
                     <label for="phone">Phone Number</label>
-                    <input type="phone" id="phone" name="phone" placeholder="Phone Number" required>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
 
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="Email" required>
@@ -95,7 +95,7 @@
                     <label for="message">Message</label>
                     <input type="textarea" id="message" name="message" placeholder="Please enter your message." required>
 
-                    <button class="submit">Submit</button>
+                    <button class="submit" id="submitButton">Submit</button>
                     </form>
 
                 <div class="contactMap">

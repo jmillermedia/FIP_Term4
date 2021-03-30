@@ -123,7 +123,7 @@
         </section>
 
         <!-- Join Form -->
-        <form action="submit" class="joinForm hidden">
+        <form action="../includes/sendJoin.php" method="POST" class="joinForm hidden">
             <div class="joinFormWrapper">
             <h2 class="joinForm__heading">Sign Up Form</h2>
             <p class="joinForm__close">X</p>
@@ -142,28 +142,27 @@
             </ul>
             </div>
             <label for="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstname" placeholder="Please enter your first name" required>
+            <input type="text" id="firstname" name="fname" placeholder="Please enter your first name" required>
 
             <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Please enter your last name" required>
+            <input type="text" id="lastname" name="lname" placeholder="Please enter your last name" required>
 
             <label for="lastname">Date Of Birth</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Please enter your last name" required>
-
+            <input type="text" id="lastname" name="bday" placeholder="Please enter your birthday" required>
 
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Please enter your email" required>
 
             <label for="phone">Phone Number</label>
-            <input type="phone" id="phone" name="phone" placeholder="Please enter your phone number." required>
+            <input type="text" id="phone" name="phone" placeholder="Please enter your phone number." required>
 
             <label for="program">Program</label>
-            <input type="program" id="program" name="program" placeholder="Please enter the program." required>
+            <input type="text" id="program" name="program" placeholder="Please enter the program." required>
 
             <label for="membership">Membership</label>
-            <input type="membership" id="membership" name="membership" placeholder="Please enter your membership." required>
+            <input type="text" id="membership" name="membership" placeholder="Please enter your membership." required>
 
-            <button class="submit">Submit</button>
+            <button class="submit" id="submitButton">Submit</button>
         </div>
         </form>
 

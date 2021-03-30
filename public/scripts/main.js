@@ -1,4 +1,5 @@
 import { fetchData } from "../scripts/modules/DataMiner.js";
+import { SendMail } from "../scripts/modules/Mailer.js";
 
 const myVM = (() => {
     let vue_vm = new Vue({
@@ -60,4 +61,29 @@ const myVM = (() => {
     }
 
     burgerButton.addEventListener('click', burgerMenuExpand);
+
+
+
+
+    let mailSubmit = document.querySelector('#submitButton');
+
+    function processMailFailure(result) {
+        console.table(result);
+        alert(result.message);
+    }
+
+    function processMailSuccess(result) {
+        console.table(result);
+        alert(result.message);
+    }
+
+    function processMail(event) {
+        event.preventDefault();
+
+        SendMail(this.parentNode)
+            .then(data => processMailSuccess(data))
+            .catch(err => processMailFailure(err));
+    }
+
+    mailSubmit.addEventListener("click", processMail);
 })();
