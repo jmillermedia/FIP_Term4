@@ -1,0 +1,62 @@
+.adminForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: $dark-grey;
+    padding: 3rem;
+
+    &__heading {
+        font-family: $fontStack;
+        font-size: 1.5rem;
+        margin: 1rem 0 1rem 0;
+        text-align: center;
+    }
+
+    & form {
+        background-color: $offwhite;
+        padding: 1.5rem;
+        color: $dark-grey;
+        font-family: $fontStack;
+        width: 100%;
+        max-width: 400px;
+        align-self: center;
+    }
+
+    & label {
+        display: none;
+    }
+
+    & input {
+        display: block;
+        margin: 0 auto;
+        background: none;
+        border: none;
+        border-bottom: $main-red 2px solid;
+        background-color: $offwhite;
+
+        &::placeholder {
+            font-family: $fontStack;
+            font-size: 1rem;
+        }
+    }
+
+    & button {
+        border: none;
+        background-color: $main-red;
+        color: $offwhite;
+        padding: 0.75rem;
+        width: 100px;
+        border-radius: 32px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .adminForm {
+        & form {
+
+        }
+    }
+}

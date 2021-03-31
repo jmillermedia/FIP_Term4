@@ -1,0 +1,298 @@
+.howToWrapper {
+    width: 100%;
+    background-color: $dark-grey;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.howTo {
+    width: 75%;
+    font-family: $fontStack;
+    background-color: $dark-grey;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    &__heading {
+        font-size: 1.5em;
+        color: $main-red;
+        margin: 0 0 1em 0;
+        text-align: center;
+        padding-top: 1em;
+    }
+
+    &__copy {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 1.5em;
+    }
+
+    &__subheading {
+        font-size: 1.25em;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    &__icon {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__points {
+        text-align: center;
+        padding: 1em 0 0.5em;
+    }
+
+    &__stageDesc {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+}
+
+.training {
+    font-family: $fontStack;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    &__heading {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    &__cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    &__card {
+        background-color: $offwhite;
+        color: $dark-grey;
+        width: 75%;
+        display: block;
+        margin: 1.5rem;
+
+        &--image {
+            height: 183px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            backdrop-filter: blur(2px) brightness(50%);
+        }
+
+        &--icon {
+            width: 60px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            padding: 1em 0 1em;
+            backdrop-filter: blur(1px) brightness(50%);
+        }
+
+        &--heading {
+            text-align: center;
+            color: $offwhite;
+            font-size: 1.5em;
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &--subheading {
+            font-size: 1.25em;
+            padding: 0.5em 0 0.5em;
+            width: 75%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &--copy {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        &--join {
+            background: none;
+            border: $footerRed 2px solid;
+            border-radius: 16px;
+            width: 100px;
+            color: $footerRed;
+            padding: 0.5em;
+            display: block;
+            align-self: center;
+            margin: 0 auto;
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(50%) blur(1px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.events {
+    font-family: $fontStack;
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+    &__heading {
+        font-size: 1.5em;
+        color: $main-red;
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    &__looking {
+        background-color: $main-red;
+        background-image: url(../images/eventsLooking.jpg);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 2em;
+
+        &--heading {
+            font-size: 1.2em;
+            text-align: center;
+        }
+    }
+
+    &__event {
+        background-color: black;
+        background-blend-mode: screen;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 180px;
+        margin-bottom: 2em;
+
+        & h3 {
+            text-align: center;
+            font-size: 1.5em;
+            padding-bottom: 1em;
+        }
+
+        & p {
+            width: 75%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        & .blur {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+
+    & .one {
+        background-image: url(../images/events1.jpg);
+    }
+
+    & .two {
+        background-image: url(../images/events2.jpg);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .howTo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "howTo__copySection howTo__progressionSection";
+    }
+
+    .howTo__copySection { grid-area: howTo__copySection; }
+
+    .howTo__progressionSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 1.7fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "howTo__subheading howTo__subheading"
+            "howTo__progressionSection--first howTo__progressionSection--second";
+        grid-area: howTo__progressionSection;
+    }
+
+    .howTo__subheading {
+        grid-area: howTo__subheading;
+        margin-top: 1.5rem;
+        }
+
+    .howTo__progressionSection--first {
+        grid-area: howTo__progressionSection--first;
+        align-self: baseline;
+        justify-self: center;
+        }
+
+    .howTo__progressionSection--second {
+            grid-area: howTo__progressionSection--second;
+            align-self: baseline;
+            justify-self: center;
+        }
+
+    .training {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        &__cards {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        &__card {
+            max-width: 370px;
+        }
+    }
+
+    .events {
+        &__cards {
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            justify-content: space-around;
+        }
+
+        &__event, &__looking {
+            max-width: 300px;
+            margin: 1rem;
+        }
+    }
+
+}

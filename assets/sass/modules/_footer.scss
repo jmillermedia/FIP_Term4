@@ -1,0 +1,113 @@
+.footer {
+    height: auto;
+
+    & h2 {
+        font-size: 1.5em;
+        font-family: $fontStack;
+        text-align: center;
+    }
+
+    &__logo {
+        display: block;
+        margin: 1.5em auto;
+        width: 200px;
+    }
+
+    &__partners {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-color: $dark-grey;
+        padding: 0.5em 0 0.5em;
+
+        & h2 {
+            display: block;
+        }
+
+        &--logos {
+        display: flex;
+        width: 60%;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        padding-top: 1em;
+        margin: 0 auto;
+
+        & img {
+            padding: 0.25em;
+        }
+        }
+
+    }
+
+    &__socialNav {
+        width: 50%;
+        display: block;
+        margin: 1em auto;
+
+        & ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-top: 1em;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: $fontStack;
+        padding-bottom: 1em;
+
+        & a {
+            color: $offwhite;
+            text-decoration: none;
+        }
+    }
+
+    &__mainNav {
+        background-color: $footerRed;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        & ul {
+            width: 100%;
+            font-family: $fontStack;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 1em;
+        }
+
+        & a {
+            color: $offwhite;
+            text-decoration: none;
+        }
+    }
+
+    &__copyright {
+        background-color: $footerRed;
+        font-family: $fontStack;
+        text-align: center;
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        &__socialNav {
+            width: 25%;
+        }
+
+        &__mainNav {
+
+            & ul {
+            width: 50%;
+            align-self: center;
+            }
+        }
+    }
+}

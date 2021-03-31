@@ -1,0 +1,118 @@
+.nav {
+    font-family:'source_sans-regular';
+    font-size: 3em;
+    color: $offwhite;
+
+    .selected {
+        color: $main-red;
+    }
+
+    &__main {
+        display: none;
+    }
+
+    &__mobile {
+        z-index: 100;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: solid $dark-grey 0.5em;
+        background-color: $light-grey;
+
+        &--ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        &--li {
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        & a {
+            color: $offwhite;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width: 280px) {
+    .burgerButton {
+        position: fixed;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 101;
+        right: 0;
+        top: 0;
+        width: 35px;
+        height: 35px;
+        padding: 2em;
+
+        .burgerBar1, .burgerBar2, .burgerBar3 {
+            width: 35px;
+            height: 3px;
+            background-color: $offwhite;
+            margin: 5px 0;
+            transition: all 0.4s;
+            border: 0.5px rgba(163, 163, 163, 0.685) solid;
+
+        }
+    }
+}
+
+.closeBurger {
+    .burgerBar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 5px);
+    transform: rotate(-45deg) translate(-7px, 5px);
+    }
+    .burgerBar2 {opacity: 0;}
+    .burgerBar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .burgerButton {
+        display: none;
+    }
+
+    .nav {
+        &__mobile {
+            display: none;
+        }
+        &__main {
+            display: block;
+            margin: 0 auto;
+            font-size: 2rem;
+            position: absolute;
+            width: 100%;
+            padding-top: 6.5rem;
+
+            &--ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            &--li {
+                padding: 0.5em;
+                & a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+            }
+        }
+    }
+}

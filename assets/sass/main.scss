@@ -1,0 +1,33 @@
+@import 'modules/_vars.scss';
+@import 'modules/_nav.scss';
+@import 'modules/_fonts.scss';
+@import 'modules/_header.scss';
+@import 'modules/_footer.scss';
+@import 'modules/_index.scss';
+@import 'modules/_about.scss';
+@import 'modules/_members.scss';
+@import 'modules/_train.scss';
+@import 'modules/signUpForm.scss';
+@import 'modules/_contact.scss';
+@import 'modules/_admin.scss';
+
+body {
+    color: $offwhite;
+    background-color: $light-grey;
+    overflow-x: hidden;
+}
+
+.puckBreak {
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+
+hr {
+    width: 25%;
+    margin-bottom: 1.5em;
+    border: none;
+    border-bottom: 3px solid $main-red;
+}

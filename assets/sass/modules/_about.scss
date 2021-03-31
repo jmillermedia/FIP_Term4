@@ -1,0 +1,127 @@
+.aboutUs {
+    height: auto;
+    padding-bottom: 1.5em;
+
+    &__heading {
+        text-align: center;
+        font-family: $fontStack;
+        color: $main-red;
+        font-size: 1.5em;
+        padding: 1em 0 0.5em 0;
+    }
+
+    &__underline {
+        width: 35%;
+        margin-bottom: 1.5em;
+    }
+
+    &__copy {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        font-family: $fontStack;
+        color: $offwhite;
+        padding-bottom: 1.5em;
+        line-height: 1.5em;
+
+        &--p {
+            margin: 1.5rem;
+        }
+    }
+
+    &__logo {
+        justify-self: center;
+        align-self: center;
+        max-width: 285px;
+    }
+
+    &__facts {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 1.5em;
+    }
+
+    &__fact {
+        background-color: $footerRed;
+        font-family: $fontStack;
+        width: 300px;
+        max-width: 300px;
+        height: 100px;
+        margin: 1.5rem;
+        display: block;
+        padding: 1.5rem;
+        border-radius: 8px;
+        -webkit-box-shadow: 4px 3px 13px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 4px 3px 13px 0px rgba(0,0,0,0.5);
+        box-shadow: 4px 3px 13px 0px rgba(0,0,0,0.5);
+
+        &--heading {
+            font-size: 1.5em;
+            padding-bottom: 0.5em;
+            }
+        }
+}
+
+.meetUs {
+    background-color: $dark-grey;
+    text-align: center;
+    font-family: $fontStack;
+
+    &__members {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    &__member {
+        padding-bottom: 2em;
+    }
+
+    &__heading {
+        font-size: 1.5em;
+        padding: 1em 0 1em 0;
+    }
+
+    &__profilePic {
+        width: 120px;
+        border-radius: 60px;
+    }
+
+    &__name {
+        font-size: 1.5em;
+        padding: 1em 0 0.25em 0;
+    }
+
+    &__role {
+        color: $main-red;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .aboutUs {
+        &__facts {
+            flex-direction: row;
+        }
+
+        &__copy {
+            width: 60%;
+            flex-direction: row;
+        }
+    }
+
+    .meetUs {
+        flex-direction: row;
+
+        &__members {
+            flex-direction: row;
+            justify-content: space-around;
+            max-width: 75%;
+        }
+    }
+}
