@@ -7,7 +7,16 @@
     <title>London Referees Group</title>
     <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/reset.css">
-
+    <style>
+    .headerIndex {
+    background-image: url(../public/images/heroIndexMobile.webp);
+    }
+    @media screen and (min-width: 768px) {
+    .headerIndex {
+        background-image: url(../public/images/heroIndexDesktop.webp);
+    }
+    }
+    </style>
 </head>
 <body>
     <main id="app">
@@ -43,7 +52,7 @@
         </header>
 
         <!-- Header Section -->
-        <section class="header" style="background-image: url(../public/images/heroIndex.jpg);">
+        <section class="header headerIndex">
             <h2 class="hidden">Hero Photo Section</h2>
             <img class="header__logo" src="../public/images/logo.svg" alt="LRG Logo">
             <p class="header__slogan">The Game Is In Your Hands</p>
@@ -58,7 +67,6 @@
                     <div class="intro__qna">
                     <h3 class="intro__question">Who are we?</h3>
                     <hr class="intro__underline">
-                
                     <p class="intro__answer">We are London Referees Group</p>
                         <p class="intro__copy">London Referees Group (LRG) is a nonprofit organization. We are based in London Ontario. We facilitate officials for local hockey games within the region.</p>
                     </div>
