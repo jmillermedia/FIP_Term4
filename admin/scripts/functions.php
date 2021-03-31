@@ -1,5 +1,4 @@
 <?php
-include("connect.php");
 $result = array();
 
 function redirect_to($location){
