@@ -27,7 +27,16 @@ if (isset($_POST['submit'])) {
     <title>London Referees Group</title>
     <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/reset.css">
-
+    <style>
+        .headerMembers {
+        background-image: url(../public/images/heroMembersMobile.webp);
+        }
+        @media screen and (min-width: 768px) {
+            .headerMembers {
+                background-image: url(../public/images/heroMembersDesktop.webp);
+            }
+        }
+    </style>
 </head>
 <body>
     <main id="app">

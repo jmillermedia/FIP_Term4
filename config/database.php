@@ -8,7 +8,7 @@ class Database
 
     private $username = "root";
 
-    private $password = "";
+    private $password = "root";
 
     #1.new private static variable
     private static $instance = null;

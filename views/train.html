@@ -7,7 +7,16 @@
     <title>London Referees Group</title>
     <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/reset.css">
-
+    <style>
+        .headerTrain {
+        background-image: url(../public/images/heroTrainMobile.webp);
+        }
+        @media screen and (min-width: 768px) {
+            .headerTrain {
+                background-image: url(../public/images/heroTrainDesktop.webp);
+            }
+        }
+    </style>
 </head>
 <body>
     <main id="app">
@@ -43,7 +52,7 @@
         </header>
 
         <!-- Header Section -->
-        <section class="header" style="background-image: url(../public/images/heroTrain.jpg);">
+        <section class="header headerTrain">
             <h2 class="hidden">Hero Photo Section</h2>
             <img class="header__logo" src="../public/images/logo.svg" alt="LRG Logo">
             <p class="header__slogan">Train With Us</p>

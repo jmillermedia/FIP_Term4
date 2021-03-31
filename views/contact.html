@@ -7,7 +7,16 @@
     <title>London Referees Group</title>
     <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/reset.css">
-
+    <style>
+        .headerContact {
+        background-image: url(../public/images/heroContactMobile.webp);
+        }
+        @media screen and (min-width: 768px) {
+            .headerContact {
+                background-image: url(../public/images/heroContactDesktop.webp);
+            }
+        }
+    </style>
 </head>
 <body>
     <main id="app">
@@ -43,7 +52,7 @@
         </header>
 
         <!-- Header Section -->
-        <section class="header" style="background-image: url(../public/images/heroContact.jpg);">
+        <section class="header headerContact">
             <h2 class="hidden">Hero Photo Section</h2>
             <img class="header__logo" src="../public/images/logo.svg" alt="LRG Logo">
             <p class="header__slogan">Reach Out</p>
