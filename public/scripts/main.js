@@ -1,5 +1,5 @@
-import { fetchData } from "../scripts/modules/DataMiner.js";
-import { SendMail } from "../scripts/modules/Mailer.js";
+import { fetchData } from "./modules/DataMiner.js";
+import { SendMail } from "./modules/Mailer.js";
 
 const myVM = (() => {
     let vue_vm = new Vue({
@@ -14,14 +14,14 @@ const myVM = (() => {
             console.log(`Vue's alive`)
         },
 
-        mounted: function(){          
-            fetchData("../includes/clients.php")
+        mounted: function(){
+            fetchData("./includes/clients.php")
             .then(data => {
                 data.forEach(client => this.clients.push(client));
                 })
             .catch(err => console.log(err));
 
-            fetchData("../includes/engage.php")
+            fetchData("./includes/engage.php")
             .then(data => {
                 data.forEach(engage => this.engages.push(engage));
                 })
@@ -29,7 +29,7 @@ const myVM = (() => {
 
 
 
-            fetchData("../includes/events.php")
+            fetchData("./includes/events.php")
             .then(data => {
                 data.forEach(event => this.events.push(event));
                 })
@@ -37,7 +37,7 @@ const myVM = (() => {
 
 
 
-            fetchData("../includes/execs.php")
+            fetchData("./includes/execs.php")
             .then(data => {
                 data.forEach(executive => this.executives.push(executive));
                 })

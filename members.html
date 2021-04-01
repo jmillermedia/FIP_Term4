@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London Referees Group</title>
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        .headerMembers {
+        background-image: url(public/images/heroMembersMobile.webp);
+        }
+        @media screen and (min-width: 768px) {
+            .headerMembers {
+                background-image: url(public/images/heroMembersDesktop.webp);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main id="app">
+        <h1 class="hidden">Main Site</h1>
+            <div class="burgerButton">
+                <div class="burgerBar1"></div>
+                <div class="burgerBar2"></div>
+                <div class="burgerBar3"></div>
+            </div>
+
+        <!-- Main Navigation Section (mobile and desktop) -->
+        <header class="nav">
+            <h2 class="hidden">Main Nav</h2>
+            <nav class="nav__main">
+                <ul class="nav__main--ul">
+                    <li class="nav__main--li"><a href="index.html">Home</a></li>
+                    <li class="nav__main--li"><a href="about.html">About Us</a></li>
+                    <li class="nav__main--li selected"><a href="members.html">Members</a></li>
+                    <li class="nav__main--li"><a href="train.html">Train</a></li>
+                    <li class="nav__main--li"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <nav class="nav__mobile hidden"> <!-- toggle hidden class with JS-->
+                <h2 class="hidden">Mobile Nav</h2>
+                <ul class="nav__mobile--ul">
+                    <li class="nav__mobile--li selected"><a href="index.html">Home</a></li>
+                    <li class="nav__mobile--li"><a href="about.html">About Us</a></li>
+                    <li class="nav__mobile--li"><a href="#" class="selected">Members</a></li>
+                    <li class="nav__mobile--li"><a href="train.html">Train</a></li>
+                    <li class="nav__mobile--li"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Header Section -->
+        <section class="header headerMembers">
+            <h2 class="hidden">Hero Photo Section</h2>
+            <img class="header__logo" src="public/images/logo.svg" alt="LRG Logo">
+            <p class="header__slogan">Members</p>
+            <button class="header__learn"><a href="admin/index.php">Login</a></button>
+            <img src="public/images/chevron-down.svg" alt="Chevron arrow pointing down." class="header__down animate__animated animate__bounce">
+        </section>
+
+        <!-- Become A Member Section -->
+        <section class="becomeMember">
+            <div class="becomeMember__card">
+                <div class="becomeMember__BGImage">
+                    <img src="public/images/becomeMember.webp" alt="Referee officiating." class="becomeMember__BGImage--image">
+                    <h2 class="becomeMember__BGImage--title">Become A Member</h2>
+                </div>
+                    <h3 class="becomeMember__question">What is membership for?</h3>
+                    <p class="becomeMember__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore magnam, veniam incidunt ducimus sint. Nesciunt minus eaque repellat aliquam cumque voluptate porro neque consectetur vero, eos adipisci sequi illum?</p>
+            </div>
+
+            <div class="becomeMember__joinNow">
+                <h2 class="becomeMember__heading">Ready to join the LRG officiating team?</h2>
+                <button class="becomeMember__join"><a href="train.html">Join Now!</a></button>
+            </div>
+
+                <div class="becomeMember__schedule">
+                <h3 class="becomeMember__heading">View Game Scheduling</h3>
+                <button class="becomeMember__join"><a href="admin/index.php"> Click Here!</a></button>
+            </div>
+        </section>
+
+        <!-- Engagement Section -->
+        <section class="engagement">
+            <img src="public/images/puckBreak.svg" alt="Puck Page Break" class="engagement__break">
+            <h2>Engagement Section</h2>
+            <hr>
+
+            <div class="engagement__pieces">
+                <div v-for="engage, index in engages" class="engagement__piece">
+                    <img :src='"public/images/" + engage.engage_image' alt="Hockey Players with Referee" class="engagement__piece--image">
+                    <h2 class="engagement__piece--heading">{{engage.engage_title}}</h2>
+                    <p>{{engage.engage_text}}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="resources">
+            <img src="public/images/puckBreak.svg" alt="Puck Icon">
+            <h2 class="resources__heading">Additional Resources</h2>
+            <p class="resources__copy">Our partner Certification Recertification Clinics and contacts.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+            </p>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__partners">
+                <h2>Partners:</h2>
+                    <div class="footer__partners--logos">
+                        <a href="#" class="partnerLink"><img src="public/images/partnerHockeyCanada.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="public/images/partnerOHF.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="public/images/partnerAllianceHockey.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="public/images/partnerOMHA.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="public/images/partnerWHA.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="public/images/partnerOHA.svg" alt="Partner Icon"></a>
+                        <a href="#" class="partnerLink"><img src="public/images/partnerSportAbility.svg" alt="Partner Icon"></a>
+                    </div>
+            </div>
+
+            <img src="public/images/logo.svg" alt="LRG Logo" class="footer__logo">
+
+            <nav class="footer__socialNav">
+                <h2 class="hidden">Social Media Navigation</h2>
+                <ul>
+                    <li><a href="#"><img src="public/images/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="public/images/twitter.svg" alt="twitter"></a></li>
+                    <li><a href="#"><img src="public/images/insta.svg" alt="instagram"></a></li>
+                    <li><a href="#"><img src="public/images/youtube.svg" alt="youtube"></a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__contact">
+                <a href="tel:222-111-2222"><img src="public/images/phoneIcon.svg" alt="Phone Icon"> 222-111-2222</a>
+                <a href="mailto:lrg@londonrefereesgroup.com"><img src="public/images/emailIcon.svg" alt="email Icon"> lrg@londonrefereesgroup.com</a>
+            </div>
+
+            <nav class="footer__mainNav">
+                <h2 class="hidden">Footer Nav</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Members</a></li>
+                    <li><a href="train.html">Train</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <p class="footer__copyright">© 2020 all rights reserved</p>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer type="module" src="public/scripts/main.js"></script>
+</body>
+</html>

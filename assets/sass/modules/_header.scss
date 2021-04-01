@@ -32,8 +32,16 @@
         align-content: center;
         color: $offwhite;
         font-family: 'source_sans-regular';
-        // text-transform: uppercase;
-        font-size: 2.5em;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+
+    &__down {
+        bottom: 0;
+        z-index: 5;
+        width: 60px;
+        opacity: 50%;
+        margin: 0 auto;
     }
 
     &__learn {
@@ -59,6 +67,17 @@
         &:hover {
             color: $light-grey;
             background-color: $offwhite;
+        }
+    }
+}
+
+@media screen and (min-width: 768px ) {
+    .header {
+        &__slogan {
+            font-size: 4rem;
+        }
+        &__down {
+            width: 80px;
         }
     }
 }
