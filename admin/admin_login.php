@@ -27,16 +27,14 @@ if (isset($_POST['submit'])) {
     <title>London Referees Group</title>
     <link rel="stylesheet" href="../public/css/main.css">
     <link rel="stylesheet" href="../public/css/reset.css">
-    <style>
-        .headerMembers {
-        background-image: url(../public/images/heroMembersMobile.webp);
-        }
-        @media screen and (min-width: 768px) {
-            .headerMembers {
-                background-image: url(../public/images/heroMembersDesktop.webp);
-            }
-        }
-    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
     <main id="app">
@@ -52,21 +50,21 @@ if (isset($_POST['submit'])) {
             <h2 class="hidden">Main Nav</h2>
             <nav class="nav__main">
                 <ul class="nav__main--ul">
-                    <li class="nav__main--li"><a href="../views/index.html">Home</a></li>
-                    <li class="nav__main--li"><a href="../views/about.html">About Us</a></li>
-                    <li class="nav__main--li"><a href="../views/members.html">Members</a></li>
-                    <li class="nav__main--li"><a href="../views/train.html">Train</a></li>
-                    <li class="nav__main--li"><a href="../views/contact.html">Contact Us</a></li>
+                    <li class="nav__main--li"><a href="../index.html">Home</a></li>
+                    <li class="nav__main--li"><a href="../about.html">About Us</a></li>
+                    <li class="nav__main--li"><a href="../members.html">Members</a></li>
+                    <li class="nav__main--li"><a href="../train.html">Train</a></li>
+                    <li class="nav__main--li"><a href="../contact.html">Contact Us</a></li>
                 </ul>
             </nav>
             <nav class="nav__mobile hidden"> <!-- toggle hidden class with JS-->
                 <h2 class="hidden">Mobile Nav</h2>
                 <ul class="nav__mobile--ul">
-                    <li class="nav__mobile--li"><a href="../views/index.html">Home</a></li>
-                    <li class="nav__mobile--li"><a href="../views/about.html">About Us</a></li>
-                    <li class="nav__mobile--li"><a href="../views/members.html">Members</a></li>
-                    <li class="nav__mobile--li"><a href="../views/train.html">Train</a></li>
-                    <li class="nav__mobile--li"><a href="../views/contact.html">Contact Us</a></li>
+                    <li class="nav__mobile--li"><a href="../index.html">Home</a></li>
+                    <li class="nav__mobile--li"><a href="../about.html">About Us</a></li>
+                    <li class="nav__mobile--li"><a href="../members.html">Members</a></li>
+                    <li class="nav__mobile--li"><a href="../train.html">Train</a></li>
+                    <li class="nav__mobile--li"><a href="../contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
@@ -127,11 +125,11 @@ if (isset($_POST['submit'])) {
             <nav class="footer__mainNav">
                 <h2 class="hidden">Footer Nav</h2>
                 <ul>
-                    <li><a href="../views/index.html">Home</a></li>
-                    <li><a href="../views/about.html">About Us</a></li>
-                    <li><a href="../views/members.html">Members</a></li>
-                    <li><a href="../views/train.html">Train</a></li>
-                    <li><a href="../views/contact.html">Contact Us</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../members.html">Members</a></li>
+                    <li><a href="../train.html">Train</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
                 </ul>
             </nav>
 

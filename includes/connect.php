@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
         'host' => '',
-        'dbname' => 'lrg_db',
+        'dbname' => 'db_lrg',
         'charset' => 'utf8'
     );
 
@@ -9,7 +9,7 @@
 
 
     $db_user = 'root';
-    $db_pass = '';
+    $db_pass = 'root';
 
     try{
         $pdo = new PDO($dsn, $db_user, $db_pass);
